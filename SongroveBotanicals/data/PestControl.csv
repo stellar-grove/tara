@@ -1,0 +1,13 @@
+Plot,Treatment,WeekNumber,PestCount
+1,Pesticide,1,10
+2,Predators,1,15
+3,Control,1,20
+1,Pesticide,2,5
+2,Predators,2,8
+3,Control,2,20
+1,Pesticide,3,2
+2,Predators,3,4
+3,Control,3,20
+1,Pesticide,4,1
+2,Predators,4,2
+3,Control,4,20

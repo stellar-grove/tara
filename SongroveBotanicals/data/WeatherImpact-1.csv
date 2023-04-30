@@ -1,0 +1,109 @@
+DataID,crop,temperature,precipitation,height,weight,yield
+0,leafy greens,30,10,5,10,20
+1,cucumbers,30,5,6,12,25
+2,carrots,30,2,4,8,18
+3,green peppers,20,10,7,15,30
+4,leafy greens,20,5,8,18,35
+5,cucumbers,20,2,6,12,25
+6,carrots,10,10,3,6,15
+7,green peppers,10,5,4,8,20
+8,leafy greens,10,2,5,10,22
+9,cucumbers,30,10,5,10,20
+10,carrots,30,5,6,12,25
+11,green peppers,30,2,4,8,18
+12,leafy greens,20,10,7,15,30
+13,cucumbers,20,5,8,18,35
+14,carrots,20,2,6,12,25
+15,green peppers,10,10,3,6,15
+16,leafy greens,10,5,4,8,20
+17,cucumbers,10,2,5,10,22
+18,carrots,30,10,5,10,20
+19,green peppers,30,5,6,12,25
+20,leafy greens,30,2,4,8,18
+21,cucumbers,20,10,7,15,30
+22,carrots,20,5,8,18,35
+23,green peppers,20,2,6,12,25
+24,leafy greens,10,10,3,6,15
+25,cucumbers,10,5,4,8,20
+26,carrots,10,2,5,10,22
+27,green peppers,30,10,5,10,20
+28,leafy greens,30,5,6,12,25
+29,cucumbers,30,2,4,8,18
+30,carrots,20,10,7,15,30
+31,green peppers,20,5,8,18,35
+32,leafy greens,20,2,6,12,25
+33,cucumbers,10,10,3,6,15
+34,carrots,10,5,4,8,20
+35,green peppers,10,2,5,10,22
+36,leafy greens,30,10,5,10,20
+37,cucumbers,30,5,6,12,25
+38,carrots,30,2,4,8,18
+39,green peppers,20,10,7,15,30
+40,leafy greens,20,5,8,18,35
+41,cucumbers,20,2,6,12,25
+42,carrots,10,10,3,6,15
+43,green peppers,10,5,4,8,20
+44,leafy greens,10,2,5,10,22
+45,cucumbers,30,10,5,10,20
+46,carrots,30,5,6,12,25
+47,green peppers,30,2,4,8,18
+48,leafy greens,20,10,7,15,30
+49,cucumbers,20,5,8,18,35
+50,carrots,20,2,6,12,25
+51,green peppers,10,10,3,6,15
+52,leafy greens,10,5,4,8,20
+53,cucumbers,10,2,5,10,22
+54,carrots,30,10,5,10,20
+55,green peppers,30,5,6,12,25
+56,leafy greens,30,2,4,8,18
+57,cucumbers,20,10,7,15,30
+58,carrots,20,5,8,18,35
+59,green peppers,20,2,6,12,25
+60,leafy greens,10,10,3,6,15
+61,cucumbers,10,5,4,8,20
+62,carrots,10,2,5,10,22
+63,green peppers,30,10,5,10,20
+64,leafy greens,30,5,6,12,25
+65,cucumbers,30,2,4,8,18
+66,carrots,20,10,7,15,30
+67,green peppers,20,5,8,18,35
+68,leafy greens,20,2,6,12,25
+69,cucumbers,10,10,3,6,15
+70,carrots,10,5,4,8,20
+71,green peppers,10,2,5,10,22
+72,leafy greens,30,10,5,10,20
+73,cucumbers,30,5,6,12,25
+74,carrots,30,2,4,8,18
+75,green peppers,20,10,7,15,30
+76,leafy greens,20,5,8,18,35
+77,cucumbers,20,2,6,12,25
+78,carrots,10,10,3,6,15
+79,green peppers,10,5,4,8,20
+80,leafy greens,10,2,5,10,22
+81,cucumbers,30,10,5,10,20
+82,carrots,30,5,6,12,25
+83,green peppers,30,2,4,8,18
+84,leafy greens,20,10,7,15,30
+85,cucumbers,20,5,8,18,35
+86,carrots,20,2,6,12,25
+87,green peppers,10,10,3,6,15
+88,leafy greens,10,5,4,8,20
+89,cucumbers,10,2,5,10,22
+90,carrots,30,10,5,10,20
+91,green peppers,30,5,6,12,25
+92,leafy greens,30,2,4,8,18
+93,cucumbers,20,10,7,15,30
+94,carrots,20,5,8,18,35
+95,green peppers,20,2,6,12,25
+96,leafy greens,10,10,3,6,15
+97,cucumbers,10,5,4,8,20
+98,carrots,10,2,5,10,22
+99,green peppers,30,10,5,10,20
+100,leafy greens,30,5,6,12,25
+101,cucumbers,30,2,4,8,18
+102,carrots,20,10,7,15,30
+103,green peppers,20,5,8,18,35
+104,leafy greens,20,2,6,12,25
+105,cucumbers,10,10,3,6,15
+106,carrots,10,5,4,8,20
+107,green peppers,10,2,5,10,22

@@ -1,0 +1,81 @@
+Factor,IrrigationType,FactorValue
+Yield,Drip,10.2
+Yield,Drip,11.5
+Yield,Drip,12.3
+Yield,Drip,11.8
+Yield,Drip,10.9
+Yield,Drip,11.2
+Yield,Drip,12.1
+Yield,Drip,10.8
+Yield,Drip,11.7
+Yield,Drip,12.2
+Yield,Flood,9.8
+Yield,Flood,10.1
+Yield,Flood,10.2
+Yield,Flood,10.5
+Yield,Flood,9.7
+Yield,Flood,9.9
+Yield,Flood,10.3
+Yield,Flood,10
+Yield,Flood,10.4
+Yield,Flood,9.6
+Yield,Sprinkler,8.9
+Yield,Sprinkler,9.1
+Yield,Sprinkler,8.8
+Yield,Sprinkler,9.5
+Yield,Sprinkler,8.7
+Yield,Sprinkler,9.2
+Yield,Sprinkler,9
+Yield,Sprinkler,8.8
+Yield,Sprinkler,9.3
+Yield,Sprinkler,8.9
+Yield,Furrow,9.6
+Yield,Furrow,9.8
+Yield,Furrow,9.9
+Yield,Furrow,9.7
+Yield,Furrow,9.4
+Yield,Furrow,9.3
+Yield,Furrow,9.8
+Yield,Furrow,9.5
+Yield,Furrow,9.6
+Yield,Furrow,9.7
+Growth Rate,Drip,2.1
+Growth Rate,Drip,2.3
+Growth Rate,Drip,2.5
+Growth Rate,Drip,2.4
+Growth Rate,Drip,2.2
+Growth Rate,Drip,2.1
+Growth Rate,Drip,2.4
+Growth Rate,Drip,2.2
+Growth Rate,Drip,2.3
+Growth Rate,Drip,2.4
+Growth Rate,Flood,1.9
+Growth Rate,Flood,2
+Growth Rate,Flood,2.1
+Growth Rate,Flood,2.2
+Growth Rate,Flood,1.8
+Growth Rate,Flood,1.9
+Growth Rate,Flood,2
+Growth Rate,Flood,2
+Growth Rate,Flood,2.1
+Growth Rate,Flood,1.8
+Growth Rate,Sprinkler,1.8
+Growth Rate,Sprinkler,1.9
+Growth Rate,Sprinkler,1.7
+Growth Rate,Sprinkler,2
+Growth Rate,Sprinkler,1.6
+Growth Rate,Sprinkler,1.8
+Growth Rate,Sprinkler,1.7
+Growth Rate,Sprinkler,1.8
+Growth Rate,Sprinkler,1.9
+Growth Rate,Sprinkler,1.7
+Growth Rate,Furrow,2
+Growth Rate,Furrow,2.1
+Growth Rate,Furrow,2.2
+Growth Rate,Furrow,2.1
+Growth Rate,Furrow,2
+Growth Rate,Furrow,1.9
+Growth Rate,Furrow,2.1
+Growth Rate,Furrow,2
+Growth Rate,Furrow,2
+Growth Rate,Furrow,2.1

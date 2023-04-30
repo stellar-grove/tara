@@ -1,0 +1,76 @@
+Crop	FertilizerType	PlotNumber	PlotID	Yield
+Corn	Organic	1	CO01	5.50451804
+Corn	Organic	2	CO02	7.179733545
+Corn	Organic	3	CO03	3.821368137
+Corn	Organic	4	CO04	5.089436805
+Corn	Organic	5	CO05	5.489021517
+Corn	Chemical	6	CC06	2.086342922
+Corn	Chemical	7	CC07	3.645726997
+Corn	Chemical	8	CC08	5.13834775
+Corn	Chemical	9	CC09	7.535621123
+Corn	Chemical	10	CC10	3.70222193
+Corn	Combination	11	CC11	5.447550475
+Corn	Combination	12	CC12	5.782562777
+Corn	Combination	13	CC13	5.28374179
+Corn	Combination	14	CC14	5.328845441
+Corn	Combination	15	CC15	4.130039193
+Tomatoes	Organic	1	TO01	6.213564364
+Tomatoes	Organic	2	TO02	6.365765459
+Tomatoes	Organic	3	TO03	6.152593719
+Tomatoes	Organic	4	TO04	5.411852889
+Tomatoes	Organic	5	TO05	6.235550113
+Tomatoes	Chemical	6	TC06	3.576072448
+Tomatoes	Chemical	7	TC07	2.675792796
+Tomatoes	Chemical	8	TC08	2.623229276
+Tomatoes	Chemical	9	TC09	6.604900765
+Tomatoes	Chemical	10	TC10	3.570734029
+Tomatoes	Combination	11	TC11	7.374271438
+Tomatoes	Combination	12	TC12	7.953366239
+Tomatoes	Combination	13	TC13	8.137578287
+Tomatoes	Combination	14	TC14	8.581918812
+Tomatoes	Combination	15	TC15	9.316411051
+Spinach	Organic	1	SO01	3.071476513
+Spinach	Organic	2	SO02	3.05309059
+Spinach	Organic	3	SO03	3.541472993
+Spinach	Organic	4	SO04	2.864377733
+Spinach	Organic	5	SO05	1.770892517
+Spinach	Chemical	6	SC06	4.766207283
+Spinach	Chemical	7	SC07	5.86683451
+Spinach	Chemical	8	SC08	5.120767881
+Spinach	Chemical	9	SC09	3.003895218
+Spinach	Chemical	10	SC10	4.322458576
+Spinach	Combination	11	SC11	8.704462581
+Spinach	Combination	12	SC12	7.025657484
+Spinach	Combination	13	SC13	6.633151866
+Spinach	Combination	14	SC14	5.257850938
+Spinach	Combination	15	SC15	5.754373259
+Carrots	Organic	1	CO01	3.538831615
+Carrots	Organic	2	CO02	3.436437225
+Carrots	Organic	3	CO03	3.260766237
+Carrots	Organic	4	CO04	5.416087189
+Carrots	Organic	5	CO05	2.757523774
+Carrots	Chemical	6	CC06	7.971299673
+Carrots	Chemical	7	CC07	4.345309661
+Carrots	Chemical	8	CC08	7.886004739
+Carrots	Chemical	9	CC09	5.665356952
+Carrots	Chemical	10	CC10	6.856843939
+Carrots	Combination	11	CC11	7.637159173
+Carrots	Combination	12	CC12	9.238295998
+Carrots	Combination	13	CC13	9.859557655
+Carrots	Combination	14	CC14	6.424160011
+Carrots	Combination	15	CC15	7.462026641
+Green Beans	Organic	1	GO01	4.557594095
+Green Beans	Organic	2	GO02	4.93435347
+Green Beans	Organic	3	GO03	6.888945348
+Green Beans	Organic	4	GO04	4.809796873
+Green Beans	Organic	5	GO05	1.356592232
+Green Beans	Chemical	6	GC06	4.730823012
+Green Beans	Chemical	7	GC07	5.709779711
+Green Beans	Chemical	8	GC08	6.297000565
+Green Beans	Chemical	9	GC09	4.405094475
+Green Beans	Chemical	10	GC10	4.495572007
+Green Beans	Combination	11	GC11	6.383703229
+Green Beans	Combination	12	GC12	6.224787533
+Green Beans	Combination	13	GC13	5.168744583
+Green Beans	Combination	14	GC14	5.780606038
+Green Beans	Combination	15	GC15	5.261915762
