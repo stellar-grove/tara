@@ -1,0 +1,10 @@
+Rotation,Nitrogen,Phosphorus,Potassium
+Corn -> Soybean -> Wheat -> Corn,25,10,20
+Corn -> Soybean -> Wheat -> Corn,30,12,22
+Corn -> Soybean -> Wheat -> Corn,28,9,21
+Soybean -> Wheat -> Corn -> Soybean,35,15,27
+Soybean -> Wheat -> Corn -> Soybean,40,18,30
+Soybean -> Wheat -> Corn -> Soybean,38,14,28
+Wheat -> Corn -> Soybean -> Wheat,30,13,24
+Wheat -> Corn -> Soybean -> Wheat,32,12,23
+Wheat -> Corn -> Soybean -> Wheat,33,11,25
