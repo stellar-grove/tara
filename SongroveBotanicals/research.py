@@ -102,6 +102,8 @@ class Irrigation(object):
                                 data["Furrow"],
                                 data["Sprinkler"]
                                 )
+        f_statistic = round(f_statistic,6)
+        p_value = round(p_value,6)
         updateLog(self.log["status"],["A1", "ANOVA calculated"])
         self.data["ANOVA"] = {"f_statistics":f_statistic,
                               "p_value":p_value}
