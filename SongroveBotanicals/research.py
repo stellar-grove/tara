@@ -23,7 +23,10 @@ DEFAULT_TTEST_IND_RATIO = 1
 
 # ------- Helper Functions -----------#
 def updateLog(existing:list,new):
-        existing.append(new)
+    existing.append(new)
+
+def clearLog(existing:list):
+    existing.clear()
 
 def determinePower(effect_size, ObsCount, 
                    alpha:float=ALPHA_VALUE, ind:bool = False):
@@ -145,14 +148,84 @@ class Fertilizer(object):
         self.data = {}
 
     def loadData(self) -> tuple:
+        # In this case we end up returning a dictionary that has all the DataFrames in it.
         self.log["status"].append(["DL0","Begin Data Load"])
         DATAPATH = f"{DATADIR}FertilizerTypes.csv"
         df = pd.read_csv(DATAPATH)
         self.log["status"].append(['DL1','Data Loaded'])
-        # dfYield = df[df["Factor"]=="Yield"].pivot(index="TrialNumber",
-        #                                           columns='IrrigationType', 
-        #                                           values='FactorValue')
-        return df
+        data_dict = {}
+        crops = list(df["Crop"].unique())
+        for crop in crops:
+            crop_name = crop.replace(" ","_").lower()
+            df_crop = df[df["Crop"]==crop]
+            df_crop = df_crop.pivot(index="TrialNumber",
+                    columns='FertilizerType', 
+                    values='Yield')
+            data_dict[crop_name] = df_crop.reset_index()
+        self.log["status"].append(['DL2','Data Transformed'])
+        self.data["FertilizerData"] = data_dict
+        self.log["status"].append(['DL3','Data Dictionary Updated'])
+        return data_dict
+    
+    def runANOVA(self,data:pd.DataFrame) -> tuple:
+        updateLog(self.log["status"],["A0", "ANOVA initiated"])
+        f_statistic, p_value = f_oneway(data["Organic"],
+                                data["Chemical"],
+                                data["Combination"]
+                                )
+        f_statistic = round(f_statistic,6)
+        p_value = round(p_value,6)
+        updateLog(self.log["status"],["A1", "ANOVA calculated"])
+        self.data["ANOVA"] = {"f_statistics":f_statistic,
+                              "p_value":p_value}
+        updateLog(self.log["status"],["A2", "ANOVA stats written"])
+        return f_statistic, p_value
+    
+    def runDominance(self, data:pd.DataFrame,test:str="t-test")->tuple:
+        # t-test
+        if test.lower() in ttestValues:
+            results = []
+            cols = list(data.columns)
+            combos = list(combinations(cols, 2))
+            for i in range(0,len(combos)):
+                A = combos[i][0]
+                B = combos[i][1]
+                stat, pvalue = ttest_ind(data[A], data[B])
+                mean_A = data[A].mean()
+                mean_B = data[B].mean()
+                pvalsig = True if pvalue < ALPHA_VALUE else False
+                interim = [A, 
+                           B, 
+                           mean_A, 
+                           mean_B, 
+                           round(stat,DECIMAL_PRECISION), 
+                           round(pvalue,DECIMAL_PRECISION),pvalsig]
+                
+                results.append(interim) 
+            results = pd.DataFrame(results, columns = DOMINANCE_COLS)
+            results.sort_values(by="Method 1",
+                                ascending=False,
+                                inplace=True)
+        return results
+    
+    def calculateMeans(self, data:pd.DataFrame, sort_order:str=None):
+        updateLog(self.log["status"],["CM0", "Means initiated"])
+        means = pd.DataFrame(data.mean()).reset_index()
+        means.columns = ["Method", "AverageYield"]
+        updateLog(self.log["status"],["CM1", "Means calculated"])
+        if sort_order != None:
+            if sort_order.lower() in ascendingValues:
+                means.sort_values(by=means.columns[1],
+                                  ascending=True,
+                                  inplace=True)
+                
+            if sort_order.lower() in descendingValues:
+                means.sort_values(by=means.columns[1],
+                                  ascending=False,
+                                  inplace=True)
+        self.data["means"] = means.set_index("Method")
+        updateLog(self.log["status"],["CM2", "Means written"])
+        return means
 
 class Harvesting(object):
     log = {}   
