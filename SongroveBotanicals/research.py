@@ -6,6 +6,7 @@ from scipy.stats import f_oneway, ttest_ind
 from itertools import combinations
 import statsmodels.stats.power as smp
 import math
+import num2words
 
 # ------ Begin Constants ----- #
 PEEP = os.environ["USERNAME"]
@@ -27,6 +28,11 @@ def updateLog(existing:list,new):
 
 def clearLog(existing:list):
     existing.clear()
+
+def moveLastNColumnsFirst(df:pd.DataFrame,number_columns:int):
+    last_n_columns = df.iloc[:, -number_columns]
+    df = pd.concat([last_n_columns, df.iloc[:, :-number_columns]], axis=1)
+    return df
 
 def determinePower(effect_size, ObsCount, 
                    alpha:float=ALPHA_VALUE, ind:bool = False):
@@ -140,7 +146,28 @@ class Irrigation(object):
         return results
         
 class CropRotation(object):
-    log = {}
+    def __init__(self, log={"status":[]})->None:
+        self.log = {"status":[['C0','class initiated']]} 
+        self.data = {}
+        
+
+    def loadData(self):
+        self.log["status"].append(["DL0","Begin Data Load"])
+        DATAPATH = f"{DATADIR}CropRotation.csv"
+        df = pd.read_csv(DATAPATH)
+        dict_rotation = {}
+        for index, value in enumerate(list(df["Rotation"].unique())):
+            dict_rotation[value] = num2words.num2words(index + 1)
+        df["method"] = df["Rotation"].map(dict_rotation)
+        df.drop(["Rotation"],axis=1,inplace=True)
+        df = moveLastNColumnsFirst(df,1)
+        return df
+    
+    def runANOVA(self, data:pd.DataFrame) -> tuple:
+        f = 1
+        p_value = 1
+        return f, p_value
+
     
 class Fertilizer(object):
     def __init__(self, log={"status":[]})->None:

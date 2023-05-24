@@ -170,7 +170,7 @@ class DaCountDeMonteCarlo(object):
         if output.lower() in ["dict","dictionary"]: lst = dict(zip(range(0,len(lst)),lst))
         return lst
 
-    def createUniformData(self, a, b, sampleSize, output = "list"):
+    def createUniformData(a, b, sampleSize, output = "list"):
         lst = np.random.uniform(a, b, sampleSize)
         if output.lower() in ["list"]: lst
         if output.lower() in getDataFrameNames(): lst = pd.DataFrame(lst,columns=["GeneratedData"])
