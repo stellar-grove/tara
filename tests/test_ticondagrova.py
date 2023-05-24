@@ -1,6 +1,6 @@
 import sys; sys.path.append("../")
 import pytest
-import distributions as dists
+import tara.distributions as dists
 import data.ticondagrova as tara_test
 
 def check_dictionary_keys(dictionary_one:dict, dictionary_two:dict):
