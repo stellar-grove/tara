@@ -2,6 +2,7 @@ import sys; sys.path.append("../")
 import pytest
 import tara.distributions as dists
 import data.ticondagrova as tara_test
+import numpy as np
 
 def check_dictionary_keys(dictionary_one:dict, dictionary_two:dict):
     for key in dictionary_one.keys():
