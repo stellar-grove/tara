@@ -2,15 +2,31 @@ import os
 import sys; sys.path.append("../")
 import tara.stuffs as stuffs
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
 
+
 # ----------------------------------------------------
 #   Helper Functions
 # ----------------------------------------------------
-
+# -------------------------------------------------------------------------------------------------------------
+# split_data: data -> Data Frame that has the data you want to run the analysis on.
+# split_data: features_list -> Holds a list of columns names where the first n items 
+# are the names of the independent variables being used in the study.  The last entry in the list
+# corresponds to the dependent variable that is being modelled.
+def test_train(data:pd.DataFrame, features_list:list)->tuple:
+    # Split data into training and validation sets
+    # First determine the independent variables.
+    X = data[features_list[:-1]]
+    y = data[features_list[-1:]]
+    # Next run the test / train split algorithm
+    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=33)
+    # return the outputs of the train test split algorithm
+    return X_train, X_val, y_train, y_val
+# --------------------------------------------------------------------------------------------------------------
 def function_narrative(d_var:list, d_coef:list, d_intercept:list, decimals:int):
     function_list = []
     for i in range(len(d_var)):
@@ -49,6 +65,37 @@ def confusion_matrix_narrative(confusion_matrices:tuple):
 
     return confusion_narrative
 
+def BuildModel(split_data:list)->tuple:
+    # Set variables for the data sets
+    y_train = np.ravel(split_data[0])
+    y_val = np.ravel(split_data[1])
+    X_train = split_data[2]
+    X_val = split_data[3]
+
+    dict_model = {}
+    dict_data = {}
+    # Train model
+    model = LogisticRegression()
+    fitted_model = model.fit(X_train, y_train)
+    dict_model["model"] = fitted_model
+    dict_model["d_var"] = list(X_train.columns)
+    dict_model["d_coef"] = [c for c in model.coef_[0]]
+    dict_model["intercept"] = model.intercept_
+    dict_model["model_words"] = function_narrative(dict_model["d_var"],
+                                                dict_model["d_coef"],
+                                                dict_model["intercept"],
+                                                4)
+    dict_model["accuracy_score"] = model.score(X_val,y_val)
+    predictions = model.predict(X_train)
+    dict_data["predictions"] = pd.DataFrame(predictions,columns=["Prediction"])
+    confusion_matricies = confusion_matrix_output(y_train,
+                                                dict_data["predictions"],
+                                                ["No","Yes"])
+    dict_model["confusion_matrix"] = confusion_matricies[0]
+    dict_model["confusion_pct"] = confusion_matricies[1]
+    dict_model["confusion_narrative"] = confusion_matrix_narrative(confusion_matricies)
+    return dict_model, dict_data
+
 
 class CreditScore(object):
     def __init__(self, log={"status":[]})->None:
@@ -57,46 +104,37 @@ class CreditScore(object):
         self.config = {}
         self.model = {}
 
-    def loadData(self):
-        data_location = f"{stuffs.DATA_FOLDER}CreditScore.csv"
+    def loadData(self, test_size=0.2, fileName = "CreditScore.csv"):
+
+        # This function grabs the data from the data folder in the repo and then
+        # splits it into a few different pieces:
+        #   1) the entire data set
+        #   2) All the independent or X variables
+        #   3) The variable being modeled or the Y variable.
+        #   4) The different components of the test_train split: X_train, X_val, y_train, y_val
+        # All these datasets are put into keys of the class level data dictionary.
+        # The split data is put into a list, so when you call it it will have four elements,
+        # each of which being one of the outputs of the test_train procedure.
+
+        data_location = f"{stuffs.DATA_FOLDER}{fileName}"
         df = pd.read_csv(data_location)
         self.data["CreditScore"] = df
-        self.data["X"] = df[['credit_score', 'income', 'loan_amount']]
-        self.data["y"] = df[['repayment_status']]
-        return df
-    
+        self.data["X"] = df.iloc[:, -1:]
+        self.data["y"] = df.iloc[:, :-1]
+        X_train, X_val, y_train, y_val = train_test_split(self.data["X"], self.data["y"],
+                                                          test_size=test_size,
+                                                          random_state=33)
+        split_data = [X_train, X_val, y_train, y_val]
+        self.data["split_data"] = split_data
+        
+
     def BuildModel(self):
-        # Split data into training and validation sets
-        X = self.data["X"]
-        y = self.data["y"]
-        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=33)
-        self.data["X_train"] = X_train
-        self.data["X_val"] = X_val
-        self.data["y_train"] = y_train
-        self.data["y_val"] = y_val
-
-        # Train model
-        model = LogisticRegression()
-        fitted_model = model.fit(X_train, y_train)
-        self.model["model"] = fitted_model
-
-        self.model["d_var"] = list(X.columns)
-        self.model["d_coef"] = [c for c in model.coef_[0]]
-        self.model["intercept"] = model.intercept_
-        self.model["model_words"] = function_narrative(self.model["d_var"],
-                                                       self.model["d_coef"],
-                                                       self.model["intercept"],
-                                                       4)
-        self.model["accuracy_score"] = model.score
-        predictions = model.predict(X_train)
-        self.data["predictions"] = predictions
-        confusion_matricies = confusion_matrix_output(self.data["y_train"],
-                                                      self.data["predictions"],
-                                                      ["No","Yes"])
-        self.model["confusion_matrix"] = confusion_matricies[0]
-        self.model["confusion_pct"] = confusion_matricies[1]
-        self.model["confusion_narrative"] = confusion_matrix_narrative(confusion_matricies)
-
+        split_data = self.data["split_data"]
+        model, data = BuildModel(split_data)
+        for key in model.keys():
+            self.model[key] = model[key]
+        for key in data.keys():
+            self.data[key] = data[key]
 
     def CreatePredictions(self):
         model = self.config["model"]

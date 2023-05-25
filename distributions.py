@@ -105,7 +105,7 @@ class DaCountDeMonteCarlo(object):
         self.config.update(dict_update)
 
     def generateSingleSample(self, dict_distribution):
-        dfOutput = pd.DataFrame(createUniformData(0, 1, self.config["sampleSize"]), columns=["uniSample"])
+        dfOutput = pd.DataFrame(self.createUniformData(0, 1, self.config["sampleSize"]), columns=["uniSample"])
         if dict_distribution["distributionName"].lower() in ["tsp","twosidedpower","two-sided-power"]:
             listParameters = [dict_distribution["distributionParameters"]["low"],
                                 dict_distribution["distributionParameters"]["mid"],
@@ -170,7 +170,7 @@ class DaCountDeMonteCarlo(object):
         if output.lower() in ["dict","dictionary"]: lst = dict(zip(range(0,len(lst)),lst))
         return lst
 
-    def createUniformData(self, a, b, sampleSize, output = "list"):
+    def createUniformData(a, b, sampleSize, output = "list"):
         lst = np.random.uniform(a, b, sampleSize)
         if output.lower() in ["list"]: lst
         if output.lower() in getDataFrameNames(): lst = pd.DataFrame(lst,columns=["GeneratedData"])
