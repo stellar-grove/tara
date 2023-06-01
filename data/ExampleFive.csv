@@ -1,251 +1,45 @@
-﻿ExampleNumber,ExampleRow,Field,Value
-One,1,Method 1,95.557
-One,2,Method 2,67.946
-One,3,Method 3,54.038
-One,4,Method 4,41.613
-One,5,Method 5,20.350
-One,6,Method 1,87.668
-One,7,Method 2,75.173
-One,8,Method 3,51.394
-One,9,Method 4,46.488
-One,10,Method 5,8.992
-One,11,Method 1,92.103
-One,12,Method 2,63.745
-One,13,Method 3,63.523
-One,14,Method 4,44.326
-One,15,Method 5,15.891
-One,16,Method 1,80.728
-One,17,Method 2,80.704
-One,18,Method 3,53.328
-One,19,Method 4,38.462
-One,20,Method 5,5.553
-One,21,Method 1,83.383
-One,22,Method 2,67.530
-One,23,Method 3,42.945
-One,24,Method 4,44.537
-One,25,Method 5,26.925
-One,26,Method 1,95.570
-One,27,Method 2,72.496
-One,28,Method 3,47.240
-One,29,Method 4,48.146
-One,30,Method 5,30.944
-One,31,Method 1,78.122
-One,32,Method 2,68.248
-One,33,Method 3,49.777
-One,34,Method 4,50.239
-One,35,Method 5,-4.165
-One,36,Method 1,88.539
-One,37,Method 2,70.007
-One,38,Method 3,70.122
-One,39,Method 4,47.142
-One,40,Method 5,22.831
-One,41,Method 1,94.367
-One,42,Method 2,79.941
-One,43,Method 3,44.590
-One,44,Method 4,42.236
-One,45,Method 5,15.981
-One,46,Method 1,91.643
-One,47,Method 2,72.966
-One,48,Method 3,49.571
-One,49,Method 4,53.659
-One,50,Method 5,14.606
-Two,1,Method 1,95.196
-Two,2,Method 2,54.037
-Two,3,Method 3,63.691
-Two,4,Method 4,45.726
-Two,5,Method 5,21.609
-Two,6,Method 1,89.452
-Two,7,Method 2,68.132
-Two,8,Method 3,47.486
-Two,9,Method 4,38.746
-Two,10,Method 5,44.746
-Two,11,Method 1,91.982
-Two,12,Method 2,65.521
-Two,13,Method 3,59.409
-Two,14,Method 4,46.872
-Two,15,Method 5,19.479
-Two,16,Method 1,82.997
-Two,17,Method 2,65.775
-Two,18,Method 3,46.546
-Two,19,Method 4,36.998
-Two,20,Method 5,15.786
-Two,21,Method 1,90.640
-Two,22,Method 2,80.309
-Two,23,Method 3,47.425
-Two,24,Method 4,40.084
-Two,25,Method 5,10.559
-Two,26,Method 1,93.799
-Two,27,Method 2,63.487
-Two,28,Method 3,55.210
-Two,29,Method 4,40.150
-Two,30,Method 5,22.908
-Two,31,Method 1,86.567
-Two,32,Method 2,57.644
-Two,33,Method 3,61.918
-Two,34,Method 4,37.750
-Two,35,Method 5,20.873
-Two,36,Method 1,84.508
-Two,37,Method 2,71.233
-Two,38,Method 3,53.902
-Two,39,Method 4,40.633
-Two,40,Method 5,-8.525
-Two,41,Method 1,92.620
-Two,42,Method 2,53.612
-Two,43,Method 3,62.498
-Two,44,Method 4,45.528
-Two,45,Method 5,21.188
-Two,46,Method 1,85.401
-Two,47,Method 2,82.846
-Two,48,Method 3,47.900
-Two,49,Method 4,41.807
-Two,50,Method 5,18.472
-Three,1,Method 1,83.491
-Three,2,Method 2,72.248
-Three,3,Method 3,70.664
-Three,4,Method 4,45.418
-Three,5,Method 5,18.170
-Three,6,Method 1,90.809
-Three,7,Method 2,56.162
-Three,8,Method 3,61.430
-Three,9,Method 4,35.812
-Three,10,Method 5,-2.547
-Three,11,Method 1,94.241
-Three,12,Method 2,77.986
-Three,13,Method 3,59.882
-Three,14,Method 4,43.696
-Three,15,Method 5,16.316
-Three,16,Method 1,91.431
-Three,17,Method 2,84.608
-Three,18,Method 3,56.348
-Three,19,Method 4,42.897
-Three,20,Method 5,14.872
-Three,21,Method 1,84.155
-Three,22,Method 2,61.472
-Three,23,Method 3,53.311
-Three,24,Method 4,34.936
-Three,25,Method 5,16.152
-Three,26,Method 1,77.106
-Three,27,Method 2,81.778
-Three,28,Method 3,44.256
-Three,29,Method 4,44.692
-Three,30,Method 5,-0.783
-Three,31,Method 1,94.115
-Three,32,Method 2,57.338
-Three,33,Method 3,38.567
-Three,34,Method 4,42.651
-Three,35,Method 5,14.017
-Three,36,Method 1,84.607
-Three,37,Method 2,72.418
-Three,38,Method 3,63.806
-Three,39,Method 4,38.477
-Three,40,Method 5,7.774
-Three,41,Method 1,85.111
-Three,42,Method 2,66.025
-Three,43,Method 3,42.946
-Three,44,Method 4,42.965
-Three,45,Method 5,33.851
-Three,46,Method 1,94.258
-Three,47,Method 2,75.426
-Three,48,Method 3,47.905
-Three,49,Method 4,40.300
-Three,50,Method 5,17.617
-Four,1,Method 1,87.534
-Four,2,Method 2,60.633
-Four,3,Method 3,69.838
-Four,4,Method 4,49.979
-Four,5,Method 5,16.645
-Four,6,Method 1,99.853
-Four,7,Method 2,67.723
-Four,8,Method 3,59.502
-Four,9,Method 4,43.946
-Four,10,Method 5,6.641
-Four,11,Method 1,91.662
-Four,12,Method 2,72.208
-Four,13,Method 3,57.999
-Four,14,Method 4,37.728
-Four,15,Method 5,18.124
-Four,16,Method 1,95.254
-Four,17,Method 2,65.611
-Four,18,Method 3,58.824
-Four,19,Method 4,45.820
-Four,20,Method 5,18.764
-Four,21,Method 1,88.379
-Four,22,Method 2,69.698
-Four,23,Method 3,54.264
-Four,24,Method 4,50.404
-Four,25,Method 5,17.788
-Four,26,Method 1,92.721
-Four,27,Method 2,62.752
-Four,28,Method 3,47.072
-Four,29,Method 4,48.010
-Four,30,Method 5,10.307
-Four,31,Method 1,89.363
-Four,32,Method 2,76.748
-Four,33,Method 3,54.619
-Four,34,Method 4,43.878
-Four,35,Method 5,24.409
-Four,36,Method 1,100.099
-Four,37,Method 2,61.779
-Four,38,Method 3,47.183
-Four,39,Method 4,40.775
-Four,40,Method 5,18.222
-Four,41,Method 1,76.495
-Four,42,Method 2,74.545
-Four,43,Method 3,68.438
-Four,44,Method 4,35.316
-Four,45,Method 5,31.926
-Four,46,Method 1,83.941
-Four,47,Method 2,81.276
-Four,48,Method 3,61.926
-Four,49,Method 4,45.834
-Four,50,Method 5,12.169
-Five,1,Method 1,89.549
-Five,2,Method 2,74.263
-Five,3,Method 3,64.602
-Five,4,Method 4,40.763
-Five,5,Method 5,18.537
-Five,6,Method 1,97.187
-Five,7,Method 2,79.864
-Five,8,Method 3,57.195
-Five,9,Method 4,40.084
-Five,10,Method 5,-13.717
-Five,11,Method 1,80.507
-Five,12,Method 2,65.370
-Five,13,Method 3,48.312
-Five,14,Method 4,47.337
-Five,15,Method 5,10.238
-Five,16,Method 1,81.199
-Five,17,Method 2,67.945
-Five,18,Method 3,55.277
-Five,19,Method 4,47.409
-Five,20,Method 5,7.420
-Five,21,Method 1,98.405
-Five,22,Method 2,78.304
-Five,23,Method 3,63.976
-Five,24,Method 4,34.999
-Five,25,Method 5,15.744
-Five,26,Method 1,96.847
-Five,27,Method 2,68.550
-Five,28,Method 3,53.248
-Five,29,Method 4,39.409
-Five,30,Method 5,21.987
-Five,31,Method 1,84.011
-Five,32,Method 2,72.886
-Five,33,Method 3,57.078
-Five,34,Method 4,41.520
-Five,35,Method 5,18.864
-Five,36,Method 1,89.121
-Five,37,Method 2,72.422
-Five,38,Method 3,57.004
-Five,39,Method 4,38.473
-Five,40,Method 5,21.151
-Five,41,Method 1,90.697
-Five,42,Method 2,79.855
-Five,43,Method 3,41.136
-Five,44,Method 4,51.640
-Five,45,Method 5,28.314
-Five,46,Method 1,86.335
-Five,47,Method 2,67.278
-Five,48,Method 3,48.502
-Five,49,Method 4,50.137
-Five,50,Method 5,12.337
+﻿Date,Sales
+10/31/2019,94009
+11/30/2019,100063.1796
+12/31/2019,108949.7906
+1/31/2020,103278.954
+2/29/2020,113093.553
+3/31/2020,108833.3188
+4/30/2020,105273.381
+5/31/2020,100472.9148
+6/30/2020,94222.49477
+7/31/2020,98471.92929
+8/31/2020,102783.0304
+9/30/2020,95376.48519
+10/31/2020,103589.3543
+11/30/2020,100878.4209
+12/31/2020,95907.13234
+1/31/2021,97019.65508
+2/28/2021,102311.1071
+3/31/2021,102064.5373
+4/30/2021,106012.3936
+5/31/2021,108654.2224
+6/30/2021,111254.318
+7/31/2021,114303.7988
+8/31/2021,107644.4595
+9/30/2021,113261.3474
+10/31/2021,106576.6627
+11/30/2021,101420.4838
+12/31/2021,106864.7353
+1/31/2022,116060.4458
+2/28/2022,118867.948
+3/31/2022,113961.0791
+4/30/2022,107326.2651
+5/31/2022,100735.3591
+6/30/2022,94789.95823
+7/31/2022,99305.75184
+8/31/2022,96689.04528
+9/30/2022,101197.6555
+10/31/2022,106998.3051
+11/30/2022,106190.4679
+12/31/2022,105735.9727
+1/31/2023,115504.9192
+2/28/2023,126323.1099
+3/31/2023,134948.4519
+4/30/2023,125973.0303
+5/31/2023,117579.4473
