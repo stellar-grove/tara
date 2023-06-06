@@ -141,3 +141,27 @@ class CreditScore(object):
         predictions = model.predict(self.data["X_train"])
         return predictions
     
+class Titanic(object):
+    def __init__(self):
+        self.data = {}
+    # Define any class specific variables
+    study = "Titanic"
+    file_location = f'{stuffs.kaggleWD}{study}'
+    def load_data(self)->tuple:
+        df_test = pd.read_csv(f"{self.file_location}/test.csv")
+        df_test["data_set"] = "test"
+        df_train = pd.read_csv(f"{self.file_location}/train.csv")
+        df_train["data_set"] = "train"
+        self.data["test_set"] = df_test
+        self.data["train_set"] = df_train
+        return df_test,df_train
+
+    def combine_data_sets(self):
+        df_data = pd.concat([self.data["test_set"], self.data["train_set"]],ignore_index=True)
+        return df_data
+
+
+    def process_data(self):
+        test, train = self.load_data()
+        combined_data = self.combine_data_sets()
+        return combined_data
