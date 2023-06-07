@@ -160,7 +160,6 @@ class Titanic(object):
         df_data = pd.concat([self.data["test_set"], self.data["train_set"]],ignore_index=True)
         return df_data
 
-
     def process_data(self):
         test, train = self.load_data()
         combined_data = self.combine_data_sets()
