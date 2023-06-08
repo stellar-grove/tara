@@ -1,0 +1,11 @@
+﻿column_name,id,entity_rollup,story_link,og_records,new_records,data_type
+records_lost,16,Animoto,https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/,ALL,25402283,2
+records_lost,20,Fotolog,https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/,3M,1600000,2
+records_lost,23,CoffeeMeetsBagel,https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/,ALL,6174513,2
+records_lost,33,Petflow,https://techcrunch.com/2019/02/14/hacker-strikes-again/,ALL,1000000,1
+records_lost,48,Dixons Carphone,https://www.bbc.com/news/business-44465331,10M,8100000,1
+records_lost,50,Saks and Lord & Taylor,https://www.nytimes.com/2018/04/01/technology/saks-lord-taylor-credit-cards.html,<5000000,500000,3
+records_lost,56,Health South East,https://www.itgovernance.eu/blog/en/breach-at-norways-largest-healthcare-authority-was-a-disaster-waiting-to-happen,<3000000,3000000,4
+records_lost,62,Orbitz,https://www.usnews.com/news/business/articles/2018-03-20/orbitz-legacy-travel-booking-platform-likely-hacked,10M,880000,3
+records_lost,194,OVH,http://status.ovh.net/?do=details&id=5070,,,1
+,,,,,,
