@@ -6,8 +6,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
 # Variables
-#data_location = '/content/sample_data/'
-data_location = 'C:/stellar-grove/tara/data/'
+data_location = '/content/sample_data/'
+#data_location = 'C:/stellar-grove/tara/data/'
 excel_types = ['.xlsx','.xls']
 csv_types = ['.csv','.txt']
 file_name = "Book1 - DMC"
@@ -304,3 +304,6 @@ def confusion_matrix_narrative(confusion_matrices:tuple):
 
     return confusion_narrative
 
+def print_out_logit_results(model_output):
+    for key in model_output[0]:
+        print(key,model_output[0][key])
