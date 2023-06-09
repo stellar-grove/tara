@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 
 # Variables
+#data_location = '/content/sample_data/'
 data_location = 'C:/stellar-grove/tara/data/'
 excel_types = ['.xlsx','.xls']
 csv_types = ['.csv','.txt']
@@ -22,7 +23,9 @@ entity_roll_up = {
                 }
 
 
+
 # Functions
+# ----------------------------------------------------------
 ## Helper Functions
 def createDictionaryFromList(list:list):
     dictionary = dict
@@ -44,9 +47,16 @@ def locate_text_rows(data_frame:pd.DataFrame, column_name=None):
     idx = pd.to_numeric(data_frame[column_name],errors="coerce").isna()
     return idx
 
+def create_abbreviation(word_list:list):
+    if len(word_list) == 1: return word_list[0]
+    if len(word_list) > 1:
+        abbr = ""
+        for word in word_list:
+            abbr += word[0]
+    return abbr
 
 # ----------------------------------------------------------
-## Processing Functions
+# Processing Functions
 
 def process_data():
     data_frame = loadData(file_name)
@@ -57,6 +67,8 @@ def process_data():
     data_frame.columns = process_column_names(data_frame)
     process_entity_rollup(data_frame)
     process_date_columns(data_frame)
+    data_frame = process_records_lost_outlier(data_frame)
+    data_frame = process_entity_names_for_labels(data_frame)
     return data_frame
 
 def loadData(file_name:str, file_extension:str='.xlsx'):
@@ -104,3 +116,27 @@ def find_error_rows(data_frame:pd.DataFrame,column_name:None,expected_type=float
     errors["entity_rollup"] = data_frame["entity_rollup"][idx]
     errors["1st_source_link"] = data_frame["1st_source_link"][idx]
     return errors
+
+
+
+# ---------------------------------------------------------------------------------------------------------
+
+# Process entity names for good labeling
+def process_entity_names_for_labels(data_frame:pd.DataFrame, column_name:str="entity_rollup"):
+    data_frame["entity_split"] = data_frame[column_name].apply(lambda row: list(row.split(" ")))
+    data_frame["entity_label"] = data_frame["entity_split"].apply(lambda row: create_abbreviation(row))
+    data_frame.drop("entity_split",axis=1,inplace=True)
+    return data_frame 
+
+# Data Functions
+def process_records_lost_outlier(data_frame:pd.DataFrame):
+    file_location = f'{data_location}error_corrections.csv'
+    error_corrections = pd.read_csv(file_location)
+    ec_mapper = error_corrections[["id","new_records"]].set_index("id").to_dict()
+    ec_mapper = ec_mapper["new_records"]
+    for row in ec_mapper:
+        data_frame.loc[row,"records_lost"] = ec_mapper[row]
+    data_frame["records_lost"] = pd.to_numeric(data_frame["records_lost"])
+    idx = data_frame["records_lost"].notnull()
+    data_frame = data_frame[idx]
+    return data_frame
