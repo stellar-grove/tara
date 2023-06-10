@@ -150,9 +150,8 @@ def check_data_sensitivity(data_frame:pd.DataFrame):
 # it's really bad.  This again assumes that ALL is the worst.  If a company doesn't have personal information 
 # about people in their databases than losing ALL of it is the same as losing online information.
 def create_weights(data_frame:pd.DataFrame, column_name:str="data_sensitivity"):
-    columns = ["records_lost",column_name]
-    weight_total = data_frame[columns].groupby(by=column_name).sum()
-    return weight_total
+    data_frame["wt"] = data_frame[column_name] / data_frame[column_name].max()
+    return data_frame
 
 # This function simply finds all the unique elements of a column of a dataframe and then assigns a numerical 
 # value starting at 1 and going to the total number of elements. 
@@ -188,6 +187,7 @@ def process_data():
     data_frame = process_records_lost_outlier(data_frame)
     data_frame = process_entity_names_for_labels(data_frame)
     data_frame = process_data_sensitivity(data_frame)
+    data_frame = create_weights(data_frame)
     return data_frame
 
 # Gets the data from the location storage and returns the data frame associated with it.
@@ -340,7 +340,6 @@ def create_analysis_data(data_frame:pd.DataFrame):
 
     df["data_sensitity"] = pd.to_numeric(df["data_sensitivity"])
     analysis_data = df[analysis_data_cols]
-    analysis_data = create_weights(df,column_name="data_sensitivity")
     return analysis_data
 
 # -------------------------------------------------------------------------------------------------------
