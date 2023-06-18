@@ -68,7 +68,8 @@ analysis_data_cols = ["entity_rollup","year","records_lost","sector",
                       'data_sensitivity', "month",'is_web','is_healthcare',
                       'is_app', 'is_retail','is_gaming', 'is_transport',
                       'is_financial', 'is_tech','is_government', 'is_telecoms',
-                      'is_legal','is_media','is_academic', 'is_energy', 'is_military'
+                      'is_legal','is_media','is_academic', 'is_energy', 'is_military',
+                      'wt','wt_records_lost'
                       ]
 
 # List of sectors to determine whether or not the entity resided within one of the sectors.  In the sectors
@@ -151,6 +152,7 @@ def check_data_sensitivity(data_frame:pd.DataFrame):
 # about people in their databases than losing ALL of it is the same as losing online information.
 def create_weights(data_frame:pd.DataFrame, column_name:str="data_sensitivity"):
     data_frame["wt"] = data_frame[column_name] / data_frame[column_name].max()
+    data_frame['wt'] = data_frame['wt'].astype(float)
     return data_frame
 
 # This function simply finds all the unique elements of a column of a dataframe and then assigns a numerical 
@@ -177,7 +179,7 @@ def factorize_columns(data_frame:pd.DataFrame):
 # given and turns it into the a usable Data Frame to be used in the analysis phase.
 def process_data():
     data_frame = loadData(file_name)
-    remove_blank_columns(data_frame)
+    data_frame = remove_blank_columns(data_frame)
     # remove data description column
     data_frame.drop(0,axis=0,inplace=True) 
     # Process Columns names to be all lower case with underscores for spaces.
@@ -188,6 +190,7 @@ def process_data():
     data_frame = process_entity_names_for_labels(data_frame)
     data_frame = process_data_sensitivity(data_frame)
     data_frame = create_weights(data_frame)
+    data_frame = process_weights(data_frame)
     return data_frame
 
 # Gets the data from the location storage and returns the data frame associated with it.
@@ -230,8 +233,8 @@ def process_entity_rollup(data_frame:pd.DataFrame):
 def process_date_columns(data_frame:pd.DataFrame):
     data_frame["month"] = data_frame["story"].str.split(" ").apply(lambda x: x[0])
     data_frame["month"] = data_frame["month"].apply(lambda x: x[0:3])
-    data_frame["date_words"] = data_frame["month"] + "-" + data_frame["year"].astype(str)
-    data_frame["date"] = pd.to_datetime(data_frame["date_words"],format="%b-%Y")
+    data_frame["date_words"] = data_frame["year"].astype(str) + '-' + data_frame["month"]
+    data_frame["date"] = pd.to_datetime(data_frame["date_words"],format="%Y-%b")
     data_frame["month"] = pd.to_datetime(data_frame["month"],format="%b").dt.month
     return data_frame
     
@@ -299,6 +302,28 @@ def process_records_lost_outlier(data_frame:pd.DataFrame):
     data_frame = data_frame[idx]
     return data_frame
 
+def process_records_tier(data_frame:pd.DataFrame):
+    max = data_frame["records_lost"].max()
+    min = data_frame["records_lost"].min()
+    increment = (max - min) / 5
+    tiers = [0,
+             min,
+             min + increment,
+             min + (2 * increment),
+             min + (3 * increment), 
+             min + (4 * increment), 
+             max]
+    data_frame = data_frame.assign(tier=pd.cut(data_frame['records_lost'], 
+                                               bins=tiers, 
+                                               labels=[1, 2, 3, 4, 5, 6]
+                                               ))
+    data_frame['tier'] = data_frame["tier"].astype(int)
+    return data_frame
+
+def process_weights(data_frame:pd.DataFrame):
+    data_frame["wt_records_lost"] = data_frame["wt"] * data_frame["records_lost"]
+    data_frame["wt_records_lost"] = np.round(data_frame["wt_records_lost"],0)
+    return data_frame
 
 # -------------------------------------------------------------------------------------------------------
 # Dataset Functions
@@ -322,6 +347,16 @@ def generate_graph_data(data_frame:pd.DataFrame):
     cols_sensitivity = ["records_lost","data_sensitivity"]
     rcds_sensitivity = data_frame[cols_sensitivity].groupby(by=cols_sensitivity[1]).sum()
     data_dictionary["sensativity"] = rcds_sensitivity
+    cols_date = ["records_lost","date_words"]
+    rcds_date = data_frame[cols_date].groupby(by=cols_date[1]).sum()
+    data_dictionary["date"] = rcds_date
+
+    cols_sector_hund = ["records_lost","date_words", "sector"]
+    
+    rcds_sector = data_frame[cols_date].groupby(by=cols_sector_hund[1]).sum()
+    rcds_sector_hund = data_frame[cols_date].groupby(by=cols_sector_hund[1:2]).sum()
+    pct = rcds_sector_hund / rcds_sector
+    data_dictionary["sector-hund"] = pct
     return data_dictionary
 
 # Goes through and gets all the data into a form where it can be used in the analysis.  The result is a 
@@ -337,8 +372,9 @@ def create_analysis_data(data_frame:pd.DataFrame):
     df = process_is_sector(df)
     df = check_data_sensitivity(df)
     df = process_security_issue(df)
-
-    df["data_sensitity"] = pd.to_numeric(df["data_sensitivity"])
+    df = factorize_columns(df)
+    df["data_sensitivity"] = df["data_sensitivity"].astype(int)
+    df["wt"] = df["wt"].astype(float)
     analysis_data = df[analysis_data_cols]
     return analysis_data
 
@@ -436,8 +472,6 @@ def build_logit(split_data:tuple):
     dict_model["confusion_pct"] = confusion_matricies[1]
     dict_model["confusion_narrative"] = confusion_matrix_narrative(confusion_matricies)
     return dict_model, dict_data
-
-
 
 # -------------------------------------------------------------------------------------------------------
 #                         Jupyter Functions
