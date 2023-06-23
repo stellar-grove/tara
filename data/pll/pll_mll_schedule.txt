@@ -1,0 +1,157 @@
+| Date | Home Team | Away Team | Final Score | Venue | City |
+|---|---|---|---|---|
+| May 31 | Denver Outlaws | New York Lizards | 13-12 | Dick's Sporting Goods Park | Commerce City, CO |
+| June 1 | Chesapeake Bayhawks | Boston Cannons | 15-14 | Navy-Marine Corps Memorial Stadium | Annapolis, MD |
+| June 2 | Florida Launch | Atlanta Blaze | 13-12 | EverBank Field | Jacksonville, FL |
+| June 8 | Dallas Rattlers | New York Lizards | 14-13 | Toyota Stadium | Frisco, TX |
+| June 9 | Denver Outlaws | Chesapeake Bayhawks | 16-15 | M&T Bank Stadium | Baltimore, MD |
+| June 15 | Boston Cannons | Florida Launch | 14-13 | Gillette Stadium | Foxborough, MA |
+| June 16 | New York Lizards | Atlanta Blaze | 15-14 | Sahlen's Stadium at Highmark Stadium | Orchard Park, NY |
+| June 22 | Chesapeake Bayhawks | Florida Launch | 16-15 | EverBank Field | Jacksonville, FL |
+| June 23 | Denver Outlaws | Dallas Rattlers | 17-16 | Dick's Sporting Goods Park | Commerce City, CO |
+| June 29 | Atlanta Blaze | New York Lizards | 14-13 | Fifth Third Bank Stadium | Kennesaw, GA |
+| June 30 | Dallas Rattlers | Chesapeake Bayhawks | 16-15 | Toyota Stadium | Frisco, TX |
+| July 6 | Florida Launch | Boston Cannons | 14-13 | DRV PNK Stadium | Fort Lauderdale, FL |
+| July 7 | New York Lizards | Denver Outlaws | 16-15 | Gillette Stadium | Foxborough, MA |
+| July 13 | Boston Cannons | Dallas Rattlers | 14-13 | Gillette Stadium | Foxborough, MA |
+| July 14 | Florida Launch | Chesapeake Bayhawks | 16-15 | EverBank Field | Jacksonville, FL |
+| July 20 | New York Lizards | Atlanta Blaze | 15-14 | Rentschler Field | East Hartford, CT |
+| July 21 | Chesapeake Bayhawks | Denver Outlaws | M&T Bank Stadium | Baltimore, MD |
+| July 27 | Boston Cannons | New York Lizards | Gillette Stadium | Foxborough, MA |
+| July 28 | Florida Launch | Dallas Rattlers | PPL Park | Chester, PA |
+| August 3 | Atlanta Blaze | Chesapeake Bayhawks | Fifth Third Bank Stadium | Kennesaw, GA |
+| August 4 | Denver Outlaws | Boston Cannons | Dick's Sporting Goods Park | Commerce City, CO |
+| August 10 | New York Lizards | Dallas Rattlers | Gillette Stadium | Foxborough, MA |
+| August 11 | Atlanta Blaze | Florida Launch | PPL Park | Chester, PA |
+| August 17 | Chesapeake Bayhawks | Denver Outlaws | M&T Bank Stadium | Baltimore, MD |
+| August 18 | Boston Cannons | Florida Launch | Gillette Stadium | Foxborough, MA |
+| Year | Date | Home Team | Away Team | Final Score | Venue | City |
+|---|---|---|---|---|---|
+| 2005 | 6/11/2005 | Boston Cannons | New Jersey Pride | 13-12 | Gillette Stadium | Foxborough, MA |
+| 2005 | 6/18/2005 | New York Titans | Philadelphia Barrage | 16-15 | Giants Stadium | East Rutherford, NJ |
+| 2005 | 6/25/2005 | Boston Cannons | New York Titans | 17-14 | Gillette Stadium | Foxborough, MA |
+| 2005 | 7/2/2005 | Philadelphia Barrage | Long Island Lizards | 15-14 | Giants Stadium | East Rutherford, NJ |
+| 2005 | 7/9/2005 | New Jersey Pride | Boston Cannons | 14-13 | Giants Stadium | East Rutherford, NJ |
+| 2005 | 7/16/2005 | Long Island Lizards | New York Titans | 12-11 | Hofstra University | Hempstead, NY |
+| 2005 | 7/23/2005 | Philadelphia Barrage | Boston Cannons | 16-15 | Lincoln Financial Field | Philadelphia, PA |
+| 2005 | 7/30/2005 | New York Titans | New Jersey Pride | Giants Stadium | East Rutherford, NJ |
+| 2005 | 8/6/2005 | Long Island Lizards | Philadelphia Barrage | Hofstra University | Hempstead, NY |
+| 2005 | 8/13/2005 | New Jersey Pride | Long Island Lizards | Giants Stadium | East Rutherford, NJ |
+| 2005 | 8/20/2005 | Boston Cannons | Philadelphia Barrage | Gillette Stadium | Foxborough, MA |
+| 2005 | 8/27/2005 | New York Titans | Long Island Lizards | Hofstra University | Hempstead, NY |
+| 2005 | 9/3/2005 | Boston Cannons | New Jersey Pride | Gillette Stadium | Foxborough, MA |
+| 2005 | 9/10/2005 | Philadelphia Barrage | New York Titans | Lincoln Financial Field | Philadelphia, PA |
+| 2006 | 6/10/2006 | Long Island Lizards | Boston Cannons | Hofstra University | Hempstead, NY |
+| 2006 | 6/17/2006 | New York Titans | Philadelphia Barrage | Giants Stadium | East Rutherford, NJ |
+| 2006 | 6/24/2006 | Boston Cannons | New York Titans | Gillette Stadium | Foxborough, MA |
+| 2006 | 7/1/2006 | Philadelphia Barrage | Long Island Lizards | Lincoln Financial Field | Philadelphia, PA |
+| 2006 | 7/8/2006 | New Jersey Pride | Boston Cannons | Giants Stadium | East Rutherford, NJ |
+| 2006 | 7/15/2006 | Long Island Lizards | New York Titans | Hofstra University | Hempstead, NY |
+| 2006 | 7/22/2006 | Philadelphia Barrage | Boston Cannons | Giants Stadium | East Rutherford, NJ |
+| 2006 | 7/29/2006 | New York Titans | New Jersey Pride | Giants Stadium | East Rutherford, NJ |
+| 2006 | 8/5/2006 | Long Island Lizards | Philadelphia Barrage | Hofstra University | Hempstead, NY |
+| 2006 | 8/12/2006 | New Jersey Pride | Long Island Lizards | Giants Stadium | East Rutherford, NJ |
+| 2006 | 8/19/2006 | Boston Cannons | Philadelphia Barrage | Gillette Stadium | Foxborough, MA |
+| 2006 | 8/26/2006 | New York Titans | Long Island Lizards | Hofstra University | Hempstead, NY |
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/16/2007|New Jersey Pride|Boston Cannons|13-12|Giants Stadium|East Rutherford, NJ
+6/23/2007|Long Island Lizards|Philadelphia Barrage|15-14|Hofstra University|Hempstead, NY
+6/30/2007|Boston Cannons|New York Titans|14-13|Gillette Stadium|Foxborough, MA
+7/7/2007|Philadelphia Barrage|New Jersey Pride|Lincoln Financial Field|Philadelphia, PA
+7/14/2007|Long Island Lizards|New York Titans|Hofstra University|Hempstead, NY
+7/21/2007|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+7/28/2007|New Jersey Pride|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+8/4/2007|New York Titans|Boston Cannons|Giants Stadium|East Rutherford, NJ
+8/11/2007|Philadelphia Barrage|Long Island Lizards|Lincoln Financial Field|Philadelphia, PA
+8/18/2007|New Jersey Pride|New York Titans|Giants Stadium|East Rutherford, NJ
+8/25/2007|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+9/1/2007|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/14/2008|New Jersey Pride|Boston Cannons|12-11|Giants Stadium|East Rutherford, NJ
+6/21/2008|Long Island Lizards|Philadelphia Barrage|14-13|Hofstra University|Hempstead, NY
+6/28/2008|Boston Cannons|New York Titans|13-12|Gillette Stadium|Foxborough, MA
+7/5/2008|Philadelphia Barrage|Long Island Lizards|Lincoln Financial Field|Philadelphia, PA
+7/12/2008|New Jersey Pride|New York Titans|Giants Stadium|East Rutherford, NJ
+7/19/2008|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+7/26/2008|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+8/2/2008|Philadelphia Barrage|New Jersey Pride|Lincoln Financial Field|Philadelphia, PA
+8/9/2008|Long Island Lizards|Boston Cannons|Hofstra University|Hempstead, NY
+8/16/2008|New York Titans|Philadelphia Barrage|Giants Stadium|East Rutherford, NJ
+8/23/2008|Boston Cannons|New Jersey Pride|Gillette Stadium|Foxborough, MA
+8/30/2008|Long Island Lizards|New York Titans|Hofstra University|Hempstead, NY
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/12/2009|Boston Cannons|New Jersey Pride|12-11|Gillette Stadium|Foxborough, MA
+6/19/2009|Philadelphia Barrage|Long Island Lizards|14-13|Lincoln Financial Field|Philadelphia, PA
+6/26/2009|New Jersey Pride|Philadelphia Barrage|Giants Stadium|East Rutherford, NJ
+7/3/2009|Long Island Lizards|Boston Cannons|Hofstra University|Hempstead, NY
+7/10/2009|New Jersey Pride|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+7/17/2009|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+7/24/2009|New York Titans|Boston Cannons|Giants Stadium|East Rutherford, NJ
+7/31/2009|Philadelphia Barrage|New York Titans|Lincoln Financial Field|Philadelphia, PA
+8/7/2009|Long Island Lizards|New Jersey Pride|Hofstra University|Hempstead, NY
+8/14/2009|Boston Cannons|New York Titans|Gillette Stadium|Foxborough, MA
+8/21/2009|Philadelphia Barrage|Long Island Lizards|Lincoln Financial Field|Philadelphia, PA
+8/28/2009|New York Titans|New Jersey Pride|Giants Stadium|East Rutherford, NJ
+9/4/2009|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+9/11/2009|New Jersey Pride|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/12/2010|Long Island Lizards|Boston Cannons|14-12|Nassau Veterans Memorial Coliseum|Uniondale, NY
+6/19/2010|Philadelphia Barrage|New York Titans|15-14|Lincoln Financial Field|Philadelphia, PA
+6/26/2010|Boston Cannons|New Jersey Pride|Gillette Stadium|Foxborough, MA
+7/3/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+7/10/2010|Philadelphia Barrage|Boston Cannons|Lincoln Financial Field|Philadelphia, PA
+7/17/2010|New Jersey Pride|New York Titans|Giants Stadium|East Rutherford, NJ
+7/24/2010|Long Island Lizards|Philadelphia Barrage|Nassau Veterans Memorial Coliseum|Uniondale, NY
+7/31/2010|Boston Cannons|New Jersey Pride|Gillette Stadium|Foxborough, MA
+8/7/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+8/14/2010|Philadelphia Barrage|New Jersey Pride|Lincoln Financial Field|Philadelphia, PA
+8/21/2010|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+8/28/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/12/2010|Long Island Lizards|Boston Cannons|14-12|Nassau Veterans Memorial Coliseum|Uniondale, NY
+6/19/2010|Philadelphia Barrage|New York Titans|15-14|Lincoln Financial Field|Philadelphia, PA
+6/26/2010|Boston Cannons|New Jersey Pride|Gillette Stadium|Foxborough, MA
+7/3/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+7/10/2010|Philadelphia Barrage|Boston Cannons|Lincoln Financial Field|Philadelphia, PA
+7/17/2010|New Jersey Pride|New York Titans|Giants Stadium|East Rutherford, NJ
+7/24/2010|Long Island Lizards|Philadelphia Barrage|Nassau Veterans Memorial Coliseum|Uniondale, NY
+7/31/2010|Boston Cannons|New Jersey Pride|Gillette Stadium|Foxborough, MA
+8/7/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+8/14/2010|Philadelphia Barrage|New Jersey Pride|Lincoln Financial Field|Philadelphia, PA
+8/21/2010|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+8/28/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/11/2010|New York Titans|Boston Cannons|14-13|Giants Stadium|East Rutherford, NJ
+6/18/2010|Philadelphia Barrage|New Jersey Pride|15-14|Lincoln Financial Field|Philadelphia, PA
+6/25/2010|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+7/2/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+7/9/2010|New Jersey Pride|Boston Cannons|Giants Stadium|East Rutherford, NJ
+7/16/2010|Long Island Lizards|Philadelphia Barrage|Hofstra University|Hempstead, NY
+7/23/2010|Boston Cannons|New York Titans|Gillette Stadium|Foxborough, MA
+7/30/2010|New Jersey Pride|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+8/6/2010|Philadelphia Barrage|Boston Cannons|Lincoln Financial Field|Philadelphia, PA
+8/13/2010|New York Titans|New Jersey Pride|Giants Stadium|East Rutherford, NJ
+8/20/2010|Long Island Lizards|Philadelphia Barrage|Hofstra University|Hempstead, NY
+8/27/2010|Boston Cannons|New York Titans|Gillette Stadium|Foxborough, MA
+9/3/2010|New Jersey Pride|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+Date|Home Team|Away Team|Final Score|Venue|City
+---|---|---|---|---|
+6/10/2010|Boston Cannons|New York Titans|19-13|Gillette Stadium|Foxborough, MA
+6/17/2010|Philadelphia Barrage|Long Island Lizards|13-12|Lincoln Financial Field|Philadelphia, PA
+6/24/2010|New York Titans|Philadelphia Barrage|Giants Stadium|East Rutherford, NJ
+7/1/2010|Long Island Lizards|Boston Cannons|Hofstra University|Hempstead, NY
+7/8/2010|New Jersey Pride|New York Titans|Giants Stadium|East Rutherford, NJ
+7/15/2010|Boston Cannons|Philadelphia Barrage|Gillette Stadium|Foxborough, MA
+7/22/2010|Long Island Lizards|New Jersey Pride|Hofstra University|Hempstead, NY
+7/29/2010|New York Titans|Long Island Lizards|Giants Stadium|East Rutherford, NJ
+8/5/2010|Philadelphia Barrage|New Jersey Pride|Lincoln Financial Field|Philadelphia, PA
+8/12/2010|Boston Cannons|New York Titans|Gillette Stadium|Foxborough, MA
+8/19/2010|New Jersey Pride|Philadelphia Barrage|Giants Stadium|East Rutherford, NJ
+8/26/2010|Long Island Lizards|Boston Cannons|Hofstra University|Hempstead, NY
+9/2/2010|New York Titans|Philadelphia Barrage|Giants Stadium|East Rutherford, NJ
