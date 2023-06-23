@@ -44,12 +44,10 @@ def get_database(db_name:str):
     df_data = pd.read_csv(file_location)
     return df_data
 
-
-
 class Data(object):
 
     def __init__(self, log={"status":[]})->None:
-        self.log = {"status":[['C0','Credit Score Class Initiated']]} 
+        self.log = {"status":[['C0','Data Cleaning Class Initiated']]} 
         self.data = {}
         self.config = {}
         self.model = {}
@@ -113,10 +111,6 @@ class Data(object):
         if file_extension in ["excel"]: data_frame = pd.read_excel(file_extension,sheet_name=sheet_name)
         return data_frame
     
-    
-
-
-    
 
     #--------------------------------------------------------
     # Data Cleaner
@@ -134,9 +128,6 @@ class Data(object):
         self.data["unnamed_count"] = unnamed_count
         return self.data
         
-
-
-        
     def check_first_rows_for_blanks(self,data_frame:pd.DataFrame):
         columns = data_frame.columns
         unnamed_columns = []
@@ -153,11 +144,17 @@ class Data(object):
             rows = idx.shape[0]
             print(rows)
     
+    def check_for_nulls(self, data_frame:pd.DataFrame):
+        nulls = data_frame.isnull()
+        return nulls
 
-
-
-
-
+    def check_numerics_for_characters(self, data_frame:pd.DataFrame):
+        # write code to scan through columns with datatypes of numbers 
+        # and see if there are any characters in there that need to be 
+        # removed and reported.
+        index = []
+        return index
+    
     def clear_log(self, dictionary_name:str):
         self.log[dictionary_name].clear()
     
@@ -260,4 +257,10 @@ class simulator(object):
             customer["customer_id"] = i
             customers = pd.concat([customers,customer])
         return customers
-        
+
+class analysis(object):
+    def __init__(self, log={"status":[]})->None:
+        self.log = {"status":[['C0','Analysis Initiated']]} 
+        self.data = {}
+        self.config = {}
+        self.results = {}        
