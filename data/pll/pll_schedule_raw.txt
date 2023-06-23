@@ -1,0 +1,56 @@
+| Date | Home Team | Away Team | Final Score | Venue | City |
+|---|---|---|---|---|
+| May 29-30 | Atlas LC | Archers LC | 14-12 | Gillette Stadium | Foxborough, MA |
+| May 29-30 | Chrome LC | Redwoods LC | 15-13 | Fifth Third Bank Stadium | Kennesaw, GA |
+| June 6-7 | Chaos LC | Whipsnakes LC | 16-14 | Kennesaw, GA |
+| June 6-7 | Cannons LC | Waterdogs LC | 17-15 | Kenneth P. LaValle Stadium | Stony Brook, NY |
+| June 12-13 | Archers LC | Cannons LC | 16-15 | Kenneth P. LaValle Stadium | Stony Brook, NY |
+| June 12-13 | Chrome LC | Chaos LC | 17-14 | Homewood Field | Baltimore, MD |
+| June 20-21 | Atlas LC | Redwoods LC | 15-14 | Homewood Field | Baltimore, MD |
+| June 20-21 | Whipsnakes LC | Waterdogs LC | 16-15 | Gillette Stadium | Foxborough, MA |
+| July 25 | Chaos LC | Archers LC | 15-14 | Zions Bank Stadium | Salt Lake City, UT |
+| July 25 | Redwoods LC | Chrome LC | 16-15 | Highmark Stadium | Orchard Park, NY |
+| July 26 | Atlas LC | Cannons LC | 17-15 | Rentschler Field | East Hartford, CT |
+| July 26 | Whipsnakes LC | Waterdogs LC | 16-15 | PPL Park | Chester, PA |
+| July 31 | Chaos LC | Redwoods LC | 15-14 | Fifth Third Bank Stadium | Kennesaw, GA |
+| July 31 | Archers LC | Cannons LC | 16-15 | Kennesaw, GA |
+| August 1 | Chrome LC | Whipsnakes LC | 17-15 | Gillette Stadium | Foxborough, MA |
+| August 1 | Waterdogs LC | Atlas LC | 16-15 | Kenneth P. LaValle Stadium | Stony Brook, NY |
+| August 4 | Chaos LC | Whipsnakes LC | 13-12 | Rentschler Field | East Hartford, CT |
+| August 4 | Archers LC | Cannons LC | 14-13 | High Point Solutions Stadium | Piscataway, NJ |
+| August 5 | Redwoods LC | Chrome LC | 15-14 | Towson University | Towson, MD |
+| August 5 | Waterdogs LC | Atlas LC | 13-12 | PPL Park | Chester, PA |
+| Date | Home Team | Away Team | Final Score | Venue | City |
+|---|---|---|---|---|
+| June 4 | Whipsnakes LC | Chaos LC | 9-8 | Rentschler Field | East Hartford, CT |
+| June 10 | Chrome LC | Redwoods LC | 12-3 | High Point Solutions Stadium | Piscataway, NJ |
+| June 17 | Waterdogs LC | Chrome LC | 14-17 | High Point Solutions Stadium | Piscataway, NJ |
+| June 24 | Redwoods LC | Whipsnakes LC | 11-12 | Rentschler Field | East Hartford, CT |
+| July 1 | Archers LC | Redwoods LC | 10-9 | High Point Solutions Stadium | Piscataway, NJ |
+| July 8 | Whipsnakes LC | Atlas LC | 18-14 | PPL Park | Chester, PA |
+| July 15 | Chaos LC | Archers LC | 16-13 | PPL Park | Chester, PA |
+| July 22 | Redwoods LC | Chrome LC | 14-13 | Towson University | Towson, MD |
+| July 29 | Atlas LC | Whipsnakes LC | 14-11 | Rentschler Field | East Hartford, CT |
+| August 5 | Archers LC | Waterdogs LC | 13-12 | High Point Solutions Stadium | Piscataway, NJ |
+| August 12 | Whipsnakes LC | Chrome LC | 15-14 | Towson University | Towson, MD |
+| August 19 | Atlas LC | Redwoods LC | 15-14 | Rentschler Field | East Hartford, CT |
+| August 26 | Chaos LC | Waterdogs LC | 14-13 | PPL Park | Chester, PA |
+| September 2 | Redwoods LC | Archers LC | 13-12 | Towson University | Towson, MD |
+| September 9 | Whipsnakes LC | Chaos LC | 15-14 | Rentschler Field | East Hartford, CT |
+| September 16 | Atlas LC | Waterdogs LC | 14-13 | PPL Park | Chester, PA |
+| Date | Home Team | Away Team | Final Score | Venue | City |
+|---|---|---|---|---|
+| June 1 & 2 | Atlas LC | Archers LC | 11-10 | Gillette Stadium | Foxborough, MA |
+| June 1 & 2 | Chaos LC | Redwoods LC | 14-13 | Red Bull Arena | Harrison, NJ |
+| June 8 & 9 | Cannons LC | Whipsnakes LC | 13-12 | SeatGeek Stadium | Bridgeview, IL |
+| June 8 & 9 | Chrome LC | Waterdogs LC | 15-14 | Kennesaw State University | Kennesaw, GA |
+| June 15 & 16 | Archers LC | Cannons LC | 14-13 | Kennesaw State University | Kennesaw, GA |
+| June 15 & 16 | Atlas LC | Chaos LC | 12-9 | Homewood Field | Baltimore, MD |
+| June 22 & 23 | Redwoods LC | Chrome LC | 18-7 | Homewood Field | Baltimore, MD |
+| June 22 & 23 | Whipsnakes LC | Waterdogs LC | 15-14 | Gillette Stadium | Foxborough, MA |
+| July 21 | All-Star Game | Whipsnakes LC | Atlas LC | 15-14 | Banc of California Stadium | Los Angeles, CA |
+| July 27 & 28 | Denver Outlaws | Chaos LC | 15-14 | Dick's Sporting Goods Park | Commerce City, CO |
+| July 27 & 28 | Redwoods LC | Chrome LC | 16-15 | Avaya Stadium | San Jose, CA |
+| August 10 & 11 | Whipsnakes LC | Archers LC | 14-13 | Tim Hortons Field | Hamilton, ON |
+| August 10 & 11 | Waterdogs LC | Chaos LC | 14-13 | Sahlen's Stadium at Highmark Stadium | Orchard Park, NY |
+| August 17 & 18 | Atlas LC | Redwoods LC | 15-14 | Tom & Mary Casey Stadium | Albany, NY |
