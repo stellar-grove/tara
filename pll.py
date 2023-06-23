@@ -26,6 +26,9 @@ DB = {'servername': server,
 tgtSchema = DB['tgtSchema']
 tgtTbl = DB['tgtTbl']
 
+dict_gender = {1:"female",2:"male",3:"other"}
+
+
 #sqlcon = create_engine('mssql://' + servername + '/' + dbname + '?trusted_connection=yes')
 cnxn = db.connect('DRIVER={SQL Server};SERVER='+DB['servername']+';DATABASE='+DB['database'])
 engine = sqlalchemy.create_engine('mssql+pyodbc://' + DB['servername'] + '/' + DB['database'] + "?" + DB['driver'],echo=False)
@@ -76,7 +79,6 @@ class Data(object):
         df = pd.concat([last_col, df.iloc[:, :-1]], axis=1)
         return df
 
-
     def update_schedule(self):
         qry = f"""
         select * from pll.schedule
@@ -104,6 +106,17 @@ class Data(object):
             records = data_frame.shape[0]
         return records
     
+    def load_file(self,file_name:str,file_extension:str=".csv",sheet_name:str=None):
+        file_location = f"{data_location}{file_name}{file_extension}"
+        if file_extension in [".csv"]: data_frame = pd.read_csv(file_location)
+        if file_extension in [".txt"]: data_frame = pd.read_table(file_location)
+        if file_extension in ["excel"]: data_frame = pd.read_excel(file_extension,sheet_name=sheet_name)
+        return data_frame
+    
+    
+
+
+    
 
     #--------------------------------------------------------
     # Data Cleaner
@@ -111,16 +124,42 @@ class Data(object):
     
     # -- Point of this section is to group together a series of functions that takes a file and runs several checks on it
     # -- to attempt to find commonly encountered things. Technically this could probably be a seperate class, but I figured
-    # -- it would be easier to follow by just grouping the functions together and running a "process_" function, which is just
+    # -- it would be easier to follow by just grouping the functions together and running a "run_" function, which is just
     # -- all the other functions that are cleaning the data stacked together to run in a pipeline of sorts.
+
+    def run_data_cleaner(self,file_name:str,file_extension:str=".csv",sheet_name:str=None):
+        data_frame = self.load_file(file_name=file_name,file_extension=file_extension,sheet_name=sheet_name)
+        self.data["initial_shape"] = data_frame.shape
+        unnamed_count = self.check_first_rows_for_blanks(data_frame)
+        self.data["unnamed_count"] = unnamed_count
+        return self.data
+        
+
+
+        
+    def check_first_rows_for_blanks(self,data_frame:pd.DataFrame):
+        columns = data_frame.columns
+        unnamed_columns = []
+        for column in columns:
+            if "unnamed" in column:
+                unnamed_columns.append(column)
+        unnamed_count = len(unnamed_columns)
+        return unnamed_count
+        
+    def check_numbers_as_string(self,data_frame:pd.DataFrame):
+        columns = data_frame.columns
+        for column in columns:
+            idx = data_frame[column].str.isnumeric()
+            rows = idx.shape[0]
+            print(rows)
+    
+
+
+
+
 
     def clear_log(self, dictionary_name:str):
         self.log[dictionary_name].clear()
-
-    
-    
-
-
     
 class simulator(object):
     def __init__(self, log={"status":[]})->None:
@@ -129,25 +168,38 @@ class simulator(object):
         self.config = {}
         self.customer = {}
     
-    def create_age(self):
-        self.customer["age"] = np.random.random_integers(0,100,1)
+    def generate_age(self):
+        age = max(min(np.random.normal(40,20), 100),0)
+        self.customer["age"] = age
+        
+    def generate_gender(self):
+        gender_value = np.random.randint(1,4)
+        gender = dict_gender[gender_value]
+        self.customer["gender_value"] = gender_value
+        self.customer["gender"] = gender
+        
 
     def generate_geographic_region(self):
-        geography = np.random(1,8,1)
+        geography = np.random.randint(1,9)
         self.customer["geography"] = geography
     
     def generate_bought_merchandise(self):
-        bought_merch = np.random.randint(0,1)
+        bought_merch = np.random.rand()
+        if bought_merch < 0.65:
+            bought_merch = 1
+        else:
+            bought_merch = 0
         self.customer["bought_merch"] = bought_merch
         
     def generate_amount_of_merchandise(self):
         if self.customer["bought_merch"] == 1:
-            merch_count = np.random.random_integers(1,100)
+            merch_count = np.random.randint(1,100)
         else:
             merch_count = 0
         self.customer["merch_count"] = merch_count
 
-    def generate_customer_name(self, gender:int):
+    def generate_customer_name(self):
+        gender = self.customer["gender_value"]
         if gender == 1:
             name = "sally samsonite"
         if gender == 2:
@@ -157,17 +209,55 @@ class simulator(object):
         self.customer["name"] = name
 
     def load_mappers(self):
-        file_location = f"{data_location}unstructured.xlxs"
-        mapper = pd.read_excel(file_location,sheet_name="mapper")
+        file_location = f"{data_location}unstructured.xlsx"
+        mapper = pd.read_excel(file_location,sheet_name="mappers",skiprows=1)
         mapper = mapper.to_dict(orient="index")
         self.data["spend_mapper"] = mapper
-
-    def generate_merch_spend(self,merch_count:int):
-        total_merch_spend = (self.data["spend_mapper"]["AvgTotalSpend"]) * (1+np.random.random())
-        average_item_price = total_merch_spend / merch_count
-        self.customer["total_spend"] = total_merch_spend
-        self.customer["average_item_spend"] = average_item_price
         
 
-    
+    def generate_merch_spend(self):
+        if self.customer["merch_count"] == 0:
+            self.customer["total_spend"] = 0
+            self.customer["average_item_spend"] = 0
+        else:
+            self.load_mappers()
+            merch_count = self.customer["merch_count"]
+            geography = self.customer["geography"]-1 # Account for 0 index
+            spending_mapper = self.data["spend_mapper"][geography]
+            total_merch_spend = (spending_mapper["AvgTotalSpend"]) * (1+np.random.random())
+            average_item_price = total_merch_spend / merch_count
+            self.customer["total_spend"] = total_merch_spend
+            self.customer["average_item_spend"] = average_item_price
+
+    def generate_games_attended(self):
+        if self.customer["merch_count"] == 0:
+            games_attended = np.random.randint(0,2)
+            self.customer["games_attended"] = games_attended
+        if self.customer["merch_count"] > 0 and self.customer["merch_count"]<5:
+            games_attended = np.random.randint(0,4)
+            self.customer["games_attended"] = games_attended
+        if self.customer["merch_count"] > 5:
+            games_attended = np.random.randint(1,10)
+            self.customer["games_attended"] = games_attended
+
+
+    def create_customer(self):
+        self.generate_age()
+        self.generate_gender()
+        self.generate_geographic_region()
+        self.generate_bought_merchandise()
+        self.generate_amount_of_merchandise()
+        self.generate_merch_spend()
+        self.generate_customer_name()
+        self.generate_games_attended()
+        return self.customer
+
+    def create_customer_base(self,base_size:int):
+        customers = pd.DataFrame()
+        for i in range(1,base_size+1):
+            customer = self.create_customer()
+            customer = pd.DataFrame().from_dict(customer,orient="index").T
+            customer["customer_id"] = i
+            customers = pd.concat([customers,customer])
+        return customers
         
