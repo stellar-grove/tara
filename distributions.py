@@ -54,7 +54,7 @@ def generateTSP(parametersList: list, sample):
     return generated_value
 
 def checkTSPParams(parametersList: list):
-    if len(parametersList) > 4: return "len not correct"
+    if len(parametersList) != 4: return "len not correct"
 
 def sum_product(a,b):
     return np.sum(a * b)
