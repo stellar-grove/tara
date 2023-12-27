@@ -3,14 +3,15 @@ repo for code and data pushed by tARA
 
 ## Contents
 The code contained in this repo is code used to complete the analysis done for our clients and other projects done.
+
+ - [Folders](#folders) 
+ - [Modules](#modules)
+ - [Songrove Botanicals](#songrove-botanicals)
+
+
 To see the full write ups, etc. see https://www.stellargrove.com/tara.  
 
-### Folders
-1. **data**: folder containing different data sets.  There is a separate folder for data used in the pll file.  This folder is aptly named pll.  In this folder there is several.csv and .txt files along with a few .xlsx files.  
-2. **notebooks**: Jupyter Notebooks to run the different analyses / projects that is contained in the files below.  A typical structure of this repo is to have a code in one or more files that can be accessed in a Jupyter notebook, allowing uses to have a somewhat interactive experience with the data / analysis.
-3. **SongroveBotanicals**: this folder has a module named research in it that houses several different studies performed with our client - Songrove Botanicals.  Songrove is a small agriculture technology firm that is looking to advance the use of statistics, data science and artficial intelligence in the field of agriculture.  The **data** folder holds all the data needed to run the analyses we performed for them, **notebooks** folder holds all the Jupyter notebooks that are used to guide users through the analyses in an organized, sequential way.
-4. **sqls**: this folder holds any sql files that need to be run as a part of any of the analyses.
-5. **tests**: this folder holds all the files necessary to run the GitHub pytest workflow.  All tests for all the files within tara are stored here.
+[Home](#ticondagrova-advanced-research--analytics)
 
 ### Modules
 1. **distirbutions.py**: This module holds several different things:
@@ -39,3 +40,34 @@ To see the full write ups, etc. see https://www.stellargrove.com/tara.
     4. **simulator:** this class has a series of functions and processes that generate simulated data for customer attributes and other things.  The idea behind this class is to show how, given rules, you can simulate out possible scenarios, then analyze said scenarios over and over again, gather what is hopefully a more accurate picture of the problem you are looking to analyze.
     5. **analysis:** this class shows off some of the heavier Data Science / Machine Learning techniques like clustering, classification, modelling and predictions.  ML gets involved by automating these individual analyses to create an automated analysis.
 6. **stuffs.py:**  this file holds a bunch of constans like connection strings, data locations etc. It's a way to put everything that is commonly referenced in one place for maintenance, though some of the modules have their own variables set, so **stuffs.py** isn't used.
+
+
+[Home](#ticondagrova-advanced-research--analytics)
+### Data
+There are 10 csv files corresponding to the different analyses done, all of which are listed below, with short descriptions of what is contained in them.
+ 1. **CropRotation**: *shows a set of data that has different crop rotations along with the phosphorus, nitrogen and potassium found in the soil as a result of the crop rotation.*
+ 2. **FertilizerTypes**: *this data set shows different crops, the fertilizer types and the yields associated with them.*
+ 3. **HarvestingMethods**: *this data set contains the results from a series of experiments that looks at how the plants were harvested.  Options contained: Hand Plot, Mechanical, Strip and Selective Harvesting Methods.  The weight of the plant in ounces is used as the measuring metric for how well / not well a particular method performed.*
+ 4. **IrrigationMethods**: *the data in this file describes four different irrigation methods: Drip, Flood, Sprinkler, and Furrow along with their yields and growth rates. The four methods are tested on both Yield and Growth Rate.*
+ 5. **PestControl**: *this data set shows the number of pests counted, 24 hours post treatment. The data is part the study using predators to deal with the pests as opposed to pesticides.*
+ 6. **PlantingTimes**: *planting times and their effects on different crops are measured here.  In this data set, three different crops: corn, wheat & greens are planted in three different parts of the growing season: early, middle and late.*
+ 7. **SeedVarieties**: *these data show a series of seeds types and the heights of the resulting plants that grew from them.*
+ 8. **SoilTypes**: *four different soil types are blinded and the resulting yields from the crops planted were measured in pounds.*
+ 9. **StorageMethods**:
+10. **WeatherImpact**:
+
+[Home](#ticondagrova-advanced-research--analytics)
+### Notebooks
+1. **ANOVA Template.ipynb:** This is a template that is used when performing ANOVA analyses.
+2. **Crop Rotation.ipynb:** This notebook looks at the analysis done for Crop Rotation experiments.
+3. **Fertilizer Type.ipynb:** Looking at the work we did with Fertilizers, use this notebook to walk through everything that we did.   
+4. **Harvesting Methods.ipynb:** 
+5. **Irrigation Methods.ipynb:**
+6. **Pest Control.ipynb:**
+7. **Planting Times.ipynb:**
+8. **Seed Varieties.ipynb:**
+9. **Soil Types.ipynb:**
+10. **Storage Methods.ipynb:**
+11. **Weather Impact.ipynb:**
+
+
