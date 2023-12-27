@@ -12,14 +12,7 @@ The code contained in this repo is code used to complete the analysis done for o
 To see the full write ups, etc. see https://www.stellargrove.com/tara.  
 
 [Home](#ticondagrova-advanced-research--analytics)
-### Folders
-1. **data**: folder containing different data sets.  There is a separate folder for data used in the pll file.  This folder is aptly named pll.  In this folder there is several.csv and .txt files along with a few .xlsx files.  
-2. **notebooks**: Jupyter Notebooks to run the different analyses / projects that is contained in the files below.  A typical structure of this repo is to have a code in one or more files that can be accessed in a Jupyter notebook, allowing uses to have a somewhat interactive experience with the data / analysis.
-3. **SongroveBotanicals**: this folder has a module named research in it that houses several different studies performed with our client - Songrove Botanicals.  Songrove is a small agriculture technology firm that is looking to advance the use of statistics, data science and artficial intelligence in the field of agriculture.  The **data** folder holds all the data needed to run the analyses we performed for them, **notebooks** folder holds all the Jupyter notebooks that are used to guide users through the analyses in an organized, sequential way.
-4. **sqls**: this folder holds any sql files that need to be run as a part of any of the analyses.
-5. **tests**: this folder holds all the files necessary to run the GitHub pytest workflow.  All tests for all the files within tara are stored here.
 
-[Home](#ticondagrova-advanced-research--analytics)
 ### Modules
 1. **distirbutions.py**: This module holds several different things:
     1. **TSP:**: First it holds the distribution for the Two-Sided-Power Distribution as described by Van Dorp 2004.  
@@ -48,16 +41,6 @@ To see the full write ups, etc. see https://www.stellargrove.com/tara.
     5. **analysis:** this class shows off some of the heavier Data Science / Machine Learning techniques like clustering, classification, modelling and predictions.  ML gets involved by automating these individual analyses to create an automated analysis.
 6. **stuffs.py:**  this file holds a bunch of constans like connection strings, data locations etc. It's a way to put everything that is commonly referenced in one place for maintenance, though some of the modules have their own variables set, so **stuffs.py** isn't used.
 
-[Home](#ticondagrova-advanced-research--analytics)
-# Songrove Botanicals
-Welcome to the Songrove Botanicals section.  Here, we highlight the work that has been done in partnership with Songrove Botanicals - an Ag Tech company that is working to apply AI, both *smart* and *dumb* along with some good ole' fashioned statistics.
-
-## Contents
- - [Data](#data) 
- - [Notebooks](#notebooks)
-
-There are three main parts to the Songrove portion of tara's research: [data](#data) folder, [notebooks](#notebooks) folder and the research.py file.  Not too unexpectedly, the data folder contains a series of csv files that contains the data from the experiments performed.  The notebooks folder contains the Jupyter notebooks needed to guide users through the experiment process, and finally reserach.py is the python file that holds all the classes and code needed to power the Jupyter notebooks.
-<br>
 
 [Home](#ticondagrova-advanced-research--analytics)
 ### Data
@@ -86,3 +69,5 @@ There are 10 csv files corresponding to the different analyses done, all of whic
 9. **Soil Types.ipynb:**
 10. **Storage Methods.ipynb:**
 11. **Weather Impact.ipynb:**
+
+
