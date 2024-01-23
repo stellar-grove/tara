@@ -21,3 +21,4 @@ DB_tara = {'servername': server,
         ,'tgtSchema':'pll'
         ,'tgtTbl':'player_stats'
         ,'fileRoot':'C:/stellar-grove/tara/data/pll/'}
+
