@@ -15,9 +15,15 @@ taraWD = f'{SGWD}ticondagrova - Documents/'
 
 kaggleWD = f'{taraWD}Kaggle/'
 server = f'{robot}\SQLEXPRESS'
+sniffnet = 'sniffnet.database.windows.net'
 DB_tara = {'servername': server,
         'database': 'tara',
         'driver': 'driver=SQL Server Native Client 11.0'
         ,'tgtSchema':'pll'
         ,'tgtTbl':'player_stats'
         ,'fileRoot':'C:/stellar-grove/tara/data/pll/'}
+
+dbAzureTARA = {'servername': sniffnet,
+            'database': 'tara',
+            'driver': 'driver=SQL Server Native Client 11.0'
+                }
