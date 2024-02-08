@@ -1,5 +1,7 @@
 import os
 
+
+# ------ Begin Folders ------ #
 DATA_FOLDER = "C:/stellar-grove/tara/data/"
 DATA_FOLDER_SONGROVE = "C:/stellar-grove/tara/SongroveBotanicals/data/"
 
@@ -15,6 +17,7 @@ taraWD = f'{SGWD}ticondagrova - Documents/'
 
 kaggleWD = f'{taraWD}Kaggle/'
 server = f'{robot}\SQLEXPRESS'
+sniffnet = 'sniffnet.database.windows.net'
 DB_tara = {'servername': server,
         'database': 'tara',
         'driver': 'driver=SQL Server Native Client 11.0'
@@ -22,3 +25,7 @@ DB_tara = {'servername': server,
         ,'tgtTbl':'player_stats'
         ,'fileRoot':'C:/stellar-grove/tara/data/pll/'}
 
+dbAzureTARA = {'servername': sniffnet,
+            'database': 'tara',
+            'driver': 'driver=SQL Server Native Client 11.0'
+                }
