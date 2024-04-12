@@ -149,7 +149,7 @@ class CropRotation(object):
     def __init__(self, log={"status":[]})->None:
         self.log = {"status":[['C0','class initiated']]} 
         self.data = {}
-        
+      
 
     def loadData(self):
         self.log["status"].append(["DL0","Begin Data Load"])
@@ -163,12 +163,57 @@ class CropRotation(object):
         df = moveLastNColumnsFirst(df,1)
         return df
     
+    def calculateMeans(self, data:pd.DataFrame, sort_order:str=None):
+        updateLog(self.log["status"],["CM0", "Means initiated"])
+        means = pd.DataFrame(data.mean()).reset_index()
+        means.columns = ["Method", "AverageYield"]
+        updateLog(self.log["status"],["CM1", "Means calculated"])
+        if sort_order != None:
+            if sort_order.lower() in ascendingValues:
+                means.sort_values(by=means.columns[1],
+                                  ascending=True,
+                                  inplace=True)
+                
+            if sort_order.lower() in descendingValues:
+                means.sort_values(by=means.columns[1],
+                                  ascending=False,
+                                  inplace=True)
+        self.data["means"] = means.set_index("Method")
+        updateLog(self.log["status"],["CM2", "Means written"])
+        return means
+
     def runANOVA(self, data:pd.DataFrame) -> tuple:
         f = 1
         p_value = 1
         return f, p_value
 
-    
+    def runDominance(self, data:pd.DataFrame,test:str="t-test")->tuple:
+        if test.lower() in ttestValues:
+            results = []
+            cols = list(data.columns)
+            combos = list(combinations(cols, 2))
+            for i in range(0,len(combos)):
+                A = combos[i][0]
+                B = combos[i][1]
+                stat, pvalue = ttest_ind(data[A], data[B])
+                mean_A = data[A].mean()
+                mean_B = data[B].mean()
+                pvalsig = True if pvalue < ALPHA_VALUE else False
+                interim = [A, 
+                           B, 
+                           mean_A, 
+                           mean_B, 
+                           round(stat,DECIMAL_PRECISION), 
+                           round(pvalue,DECIMAL_PRECISION),pvalsig]
+                
+                results.append(interim) 
+            results = pd.DataFrame(results, columns = DOMINANCE_COLS)
+            results.sort_values(by="Method 1",
+                                ascending=False,
+                                inplace=True)
+        return results
+
+
 class Fertilizer(object):
     def __init__(self, log={"status":[]})->None:
         self.log = {"status":[['C0','class initiated']]} 

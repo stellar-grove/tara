@@ -29,3 +29,13 @@ dbAzureTARA = {'servername': sniffnet,
             'database': 'tara',
             'driver': 'driver=SQL Server Native Client 11.0'
                 }
+
+
+chemistry_constants = {
+
+    "avagadro_constant":602214076000000000000000,
+    "gas_constant":8.31446261815324,
+    "boltzman_constant":1.389649e-23
+
+
+}
