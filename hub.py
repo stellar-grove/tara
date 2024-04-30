@@ -164,3 +164,5 @@ class Titanic(object):
         test, train = self.load_data()
         combined_data = self.combine_data_sets()
         return combined_data
+    
+
