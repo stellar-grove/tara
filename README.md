@@ -13,13 +13,22 @@ To see the full write ups, etc. see https://www.stellargrove.com/tara.
 
 [Home](#ticondagrova-advanced-research--analytics)
 
+### Folders
+1. <b>data</b>: <i>holds data for modules that are not entirely self contained.</i>
+2. <b>notebooks</b>: <i>contains Jupyter Notebooks that run different analyses that are not a part of a work done for Songrove Botanicals.</i>
+3. <b>Songrove Botanicals</b>: <i>work done for our agriculture client <b> Songrove Botanicals </b> - a top not agricultural research squad.</i>
+4. <b>sqls</b>: <i>sql scripts used in different modules / being worked on for different things.</i>
+5. <b>tests</b>: <i>unit test cases for functions and routines found within tara.</i>
+<br>
 ### Modules
 1. **distirbutions.py**: This module holds several different things:
-    1. **TSP:**: First it holds the distribution for the Two-Sided-Power Distribution as described by Van Dorp 2004.  
-    To use this function you call TSP and provide the low, middle and upper bounds as well as the parameter n.  See the research for more on what each mean.  
-    With the function **TSP** you can generate measures of central tendency using the TSP distribution.  It will return a dictionary with the expected value, variance, alpha & beta values needed to perform the cdf function as well as the p and q values generated.      
-    2. **createTSPSample:** returns a two-columned data_frame that holds the sample from the uniform distribution to generate the TSP value, and then the TSP value itself.  
-        For example, given the parameter list [low,mid,hi,n] = [11,15,22,2] and a size of 100, the **createTSPSample** function would return a DataFrame with two columns that contained values like [0.403533, 15.2231].  Finally there is a helper functin for the TSP distribution, which is **checkTSPParams**.  This is inteneded for the PERT simulator to come.  It simply returns "len not correct" if the length of the list is not equal to 4.
+    1. **TSP:**: *First it holds the distribution for the Two-Sided-Power Distribution as described by Van Dorp 2004.  <br>
+    To use this function you call TSP and provide the low, middle and upper bounds as well as the parameter n.  See the research for more on what each mean.  <br>
+    With the function **TSP** you can generate measures of central tendency using the TSP distribution.  It will return a dictionary with the expected value, variance, alpha & beta values needed to perform the cdf function as well as the p and q values generated. <br>      
+    2. **createTSPSample:** *returns a two-columned data_frame that holds the sample from the uniform distribution to generate the TSP value, and then the TSP value itself. <br>
+    For example, given the parameter list [low,mid,hi,n] = [11,15,22,2] and a size of 100, the **createTSPSample** function would return a DataFrame with two columns that contained values like [0.403533, 15.2231].  
+        <br>
+    Finally there is a helper functin for the TSP distribution, which is  **checkTSPParams**.  This is inteneded for the PERT simulator to come.  It simply returns "len not correct" if the length of the list is not equal to 4.*
     3. **generateTSP:** Finally, calling the function **generateTSP** generates the a singular value from the Two Sided Power (TSP) distribution. It returns the random uniform sample taken to determine what TSP value it corresponds to, and then also returns the value extracted from the TSP distribution, based on the random uniform sample taken.  Again, see Van Dorp 2004 for more details. 
     2. **sum_product**: this function finds the sum product of two arrays a, and b.  The function is literally return np.sum(a * b).  Error handling will come in a DevOps sprint later in the summer.
     3. **getDefaultParameters**: this function returns commonly used values for different distributions.  The distributions captured are: tsp, normal, poisson, binomial, bernoulli, and sample size.  The values are returned in a dictionary.
