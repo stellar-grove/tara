@@ -149,8 +149,7 @@ class CropRotation(object):
     def __init__(self, log={"status":[]})->None:
         self.log = {"status":[['C0','class initiated']]} 
         self.data = {}
-      
-
+ 
     def loadData(self):
         self.log["status"].append(["DL0","Begin Data Load"])
         DATAPATH = f"{DATADIR}CropRotation.csv"
