@@ -71,7 +71,7 @@ class TwoSidedPower(object):
         weights = [float(1/6), float(4/6), float(1/6)]
         #value1 = (2-2^(0.5))/4
         # Calculate values
-        expected_value = sum_product(np.array(params), np.array(weights))
+        expected_value = helpers.sum_product(np.array(params), np.array(weights))
         variance = ((UpperBound - LowBound)**2) / 36
         alpha = (expected_value - LowBound) / (UpperBound - LowBound)
         alpha2 = variance / (UpperBound - LowBound)**2
