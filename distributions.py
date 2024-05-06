@@ -8,6 +8,63 @@ def sum_product(a,b):
 
     return np.sum(a * b)
 
+class Helpers(object):
+    def __init__(self,config={}) -> None:
+        self.config = config
+        self.stats = {"error_details": []}
+        self.data = {}
+
+    def getDefaultParameters():
+            """
+            This routine provides a dictionary with all the default parameters for all distributions contained in this 
+            module.
+            """
+            dict_config = {
+                "sampleSize":100,
+                "tsp":{
+                        "name":"tsp",
+                        "low":13,
+                        "mid":18,
+                        "hi":25,
+                        "n":2
+                        },
+                "normal":{
+                        "name":"normal",
+                        "mean":3,
+                        "std":1.4
+                    },
+                "poisson":{
+                            "name":"poisson",
+                            "mu":4
+                        },
+                "binomial":{
+                            "name":"binomial",
+                            "n":5,
+                            "p":0.4
+                            },
+                "bernoulli":{
+                            "name":"bernoulli",
+                            "p":0.271
+                            }
+                    
+            }
+            return dict_config
+    def getDataFrameNames():
+        """
+        This function provides the different types of names 
+        that a data frame could be listed to.
+        """
+        lst = ["dataframe", "df", "data-frame"]
+        return lst
+    def sum_product(a,b):
+        return np.sum(a * b)
+
+class basic(object):
+   def __init__(self,config={}) -> None:
+        self.config = config
+
+   def sum_product(a,b):
+            return np.sum(a * b)
 
 class TwoSidedPower(object):
 
