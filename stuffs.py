@@ -5,7 +5,6 @@ import os
 DATA_FOLDER = "C:/stellar-grove/tara/data/"
 DATA_FOLDER_SONGROVE = "C:/stellar-grove/tara/SongroveBotanicals/data/"
 
-
 # ------ Begin Constants ----- #
 peep = os.environ["USERNAME"]
 robot = os.environ["COMPUTERNAME"]
@@ -30,7 +29,6 @@ dbAzureTARA = {'servername': sniffnet,
             'driver': 'driver=SQL Server Native Client 11.0'
                 }
 
-
 chemistry_constants = {
 
     "avagadro_constant":602214076000000000000000,
@@ -39,8 +37,6 @@ chemistry_constants = {
 
 
 }
-
-
 
 spyder_text = '''
 
