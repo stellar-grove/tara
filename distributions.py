@@ -117,7 +117,7 @@ class TwoSidedPower(object):
         dfSample.columns = ["randomSampleValue", "GeneratedTSPValue"]
         return dfSample
 
-    def generateTSP(parametersList: list, sample):
+    def generateTSP(self, parametersList: list, sample):
         """
         This function returns a singular value of a TSP distribution according to the 
         parameters list.  For it example it will generate a number like 14, given a value
@@ -151,7 +151,6 @@ class TwoSidedPower(object):
         """
         if len(parametersList) != 4: return "length not correct"
 
- 
     def getDefaultParameters():
             """
             This routine provides a dictionary with all the default parameters for all distributions contained in this 
