@@ -42,4 +42,3 @@ def bike_to_olin():
     bikeshare.olin += 1
     bikeshare.wellesly -= 1    
 
-
