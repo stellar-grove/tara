@@ -15,7 +15,7 @@ bitsWD = f'{SGWD}bitstaemr - Documents/'
 taraWD = f'{SGWD}ticondagrova - Documents/'
 
 kaggleWD = f'{taraWD}Kaggle/'
-udemyWD = f'{bitsWD}/Development/Udemy/'
+udemyWD = f'{bitsWD}Development/Udemy/'
 server = f'{robot}\SQLEXPRESS'
 sniffnet = 'sniffnet.database.windows.net'
 DB_tara = {'servername': server,
