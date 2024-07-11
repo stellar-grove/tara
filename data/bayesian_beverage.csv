@@ -1,0 +1,1001 @@
+age,gender,income,beverage_type,location
+58,female,603459,water,urban
+93,female,945887,water,urban
+21,male,703162,soda,rural
+67,female,755808,water,rural
+83,male,514279,water,urban
+7,male,788646,soda,rural
+18,male,705643,soda,suburban
+84,male,316063,water,suburban
+16,female,215710,soda,suburban
+52,female,109882,water,rural
+35,female,980949,fruit juice,suburban
+36,male,625709,water,urban
+94,female,904481,water,suburban
+35,female,436437,fruit juice,urban
+74,female,415442,water,suburban
+90,female,625931,water,suburban
+75,male,642851,water,suburban
+11,female,150339,soda,rural
+54,male,517193,water,rural
+27,female,420617,fruit juice,rural
+24,male,676346,soda,rural
+91,female,223759,water,suburban
+99,male,676385,water,urban
+68,female,644990,water,rural
+17,female,212481,soda,urban
+75,female,25506,water,rural
+30,male,4226,soda,rural
+70,male,914745,water,rural
+64,male,149556,water,suburban
+5,male,851600,soda,suburban
+92,female,455503,water,suburban
+30,male,30364,soda,urban
+7,male,461438,soda,suburban
+51,female,33288,water,rural
+49,male,655582,water,urban
+27,female,237733,fruit juice,urban
+9,male,794009,soda,rural
+7,male,205192,soda,rural
+50,female,237966,water,urban
+5,male,218297,soda,urban
+67,female,93424,water,suburban
+24,male,37563,soda,urban
+66,female,759970,water,urban
+72,female,326690,water,rural
+15,male,312325,soda,suburban
+67,female,488188,water,suburban
+43,female,957363,fruit juice,urban
+68,female,14663,water,suburban
+46,female,636742,fruit juice,rural
+47,male,353757,water,urban
+47,female,732263,fruit juice,rural
+84,male,521755,water,suburban
+21,male,626405,soda,urban
+93,female,347290,water,suburban
+65,male,213361,water,rural
+31,male,144176,soda,urban
+26,male,895783,soda,rural
+95,male,25655,water,rural
+83,male,402840,water,suburban
+61,female,565171,water,urban
+72,female,260261,water,rural
+58,female,120015,water,rural
+63,male,108688,water,rural
+19,female,850376,fruit juice,rural
+23,male,26200,soda,rural
+25,female,351716,fruit juice,urban
+56,female,511623,water,urban
+67,female,231855,water,suburban
+49,female,755330,fruit juice,suburban
+67,male,9258,water,rural
+44,female,707714,fruit juice,urban
+35,female,135288,fruit juice,suburban
+88,female,59580,water,suburban
+65,female,305383,water,rural
+75,male,361184,water,suburban
+84,male,952356,water,suburban
+38,female,795331,fruit juice,rural
+37,female,302137,fruit juice,rural
+33,male,979351,water,rural
+75,male,207002,water,suburban
+11,female,749586,soda,urban
+31,male,525148,water,rural
+41,female,107510,fruit juice,urban
+27,male,681187,soda,rural
+11,female,590432,soda,urban
+77,female,161072,water,suburban
+50,male,425079,water,suburban
+36,male,157112,soda,rural
+26,male,475317,soda,urban
+18,male,804472,soda,urban
+11,female,604716,soda,rural
+31,female,404882,fruit juice,suburban
+43,female,660285,fruit juice,suburban
+93,female,753066,water,rural
+86,female,242658,water,urban
+14,female,690756,soda,rural
+50,female,796728,water,suburban
+8,female,461362,soda,urban
+78,female,574060,water,suburban
+35,female,573560,fruit juice,urban
+100,male,656126,water,suburban
+35,female,988765,fruit juice,rural
+86,male,503876,water,suburban
+81,male,905710,water,suburban
+84,male,638456,water,rural
+30,female,635813,fruit juice,suburban
+23,female,755485,fruit juice,rural
+95,male,691458,water,urban
+65,female,550048,water,suburban
+76,female,606247,water,urban
+43,female,826138,fruit juice,rural
+41,male,829872,water,rural
+93,male,101165,water,suburban
+16,female,78401,soda,urban
+78,male,258257,water,suburban
+23,male,431877,soda,urban
+7,male,975452,soda,rural
+60,female,219636,water,rural
+86,male,593282,water,urban
+68,male,11073,water,urban
+32,male,534484,water,urban
+68,male,455600,water,urban
+25,female,493890,fruit juice,urban
+5,male,973334,soda,rural
+28,female,196747,fruit juice,rural
+77,female,241738,water,urban
+7,male,693891,soda,urban
+68,male,590398,water,suburban
+15,male,870689,soda,rural
+59,male,900910,water,rural
+77,male,723669,water,rural
+80,male,554347,water,rural
+78,female,447442,water,urban
+90,male,365538,water,suburban
+86,female,824814,water,suburban
+49,female,236791,fruit juice,rural
+96,female,74057,water,rural
+70,male,803609,water,suburban
+94,male,884849,water,urban
+16,female,450436,soda,rural
+47,male,479279,water,urban
+65,female,110771,water,rural
+51,male,526330,water,rural
+74,male,940089,water,suburban
+52,male,914349,water,rural
+28,female,953899,fruit juice,rural
+79,female,794967,water,suburban
+70,male,741094,water,suburban
+9,female,712819,soda,urban
+27,female,646429,fruit juice,suburban
+8,male,370802,soda,rural
+89,male,910246,water,urban
+64,female,121264,water,urban
+30,female,810021,fruit juice,urban
+25,male,141636,soda,rural
+83,male,540272,water,rural
+52,female,833062,water,suburban
+69,male,822510,water,suburban
+81,male,541087,water,suburban
+59,male,151135,water,rural
+18,female,83514,fruit juice,urban
+30,male,382762,water,rural
+8,male,232658,soda,urban
+5,male,827576,soda,suburban
+9,male,509737,soda,rural
+42,female,487652,fruit juice,suburban
+99,female,736497,water,urban
+72,female,679449,water,rural
+92,male,832060,water,urban
+73,male,715895,water,urban
+40,male,574061,water,rural
+62,male,110113,water,rural
+49,male,28258,soda,urban
+99,female,446266,water,urban
+78,female,965089,water,suburban
+71,female,488686,water,suburban
+32,female,458684,fruit juice,rural
+7,female,517818,soda,suburban
+23,male,531973,soda,rural
+98,male,841435,water,suburban
+56,male,18917,water,urban
+96,male,189897,water,suburban
+75,female,982889,water,urban
+41,male,93251,soda,rural
+10,female,954752,soda,rural
+39,female,61712,fruit juice,suburban
+40,male,34104,soda,rural
+13,female,480544,soda,suburban
+82,male,340630,water,urban
+12,male,251676,soda,rural
+38,male,667674,water,suburban
+8,female,359041,soda,rural
+82,female,118568,water,rural
+69,male,186004,water,suburban
+85,male,223509,water,rural
+7,male,733162,soda,urban
+77,male,694738,water,rural
+8,female,273582,soda,suburban
+22,female,108432,fruit juice,urban
+25,female,542883,fruit juice,urban
+47,female,553580,fruit juice,urban
+27,female,856402,fruit juice,rural
+31,female,386889,fruit juice,suburban
+70,male,287172,water,suburban
+39,male,849728,water,rural
+85,male,774425,water,urban
+9,male,448402,soda,suburban
+95,male,48514,water,urban
+92,female,49089,water,urban
+22,male,661854,soda,suburban
+32,male,303436,water,suburban
+42,male,842098,water,rural
+41,male,748848,water,urban
+79,female,811622,water,suburban
+57,female,194008,water,suburban
+57,female,379592,water,rural
+58,female,174227,water,urban
+60,male,506811,water,urban
+36,female,279609,fruit juice,rural
+9,female,9285,soda,urban
+75,female,298164,water,rural
+89,male,189849,water,suburban
+13,male,321486,soda,rural
+62,male,986629,water,suburban
+14,male,968830,soda,urban
+32,female,623795,fruit juice,urban
+76,female,277768,water,rural
+18,male,895154,soda,suburban
+31,male,574129,water,suburban
+40,male,985744,water,rural
+83,female,441575,water,rural
+76,female,779224,water,urban
+15,female,395363,soda,urban
+16,female,875464,soda,rural
+55,male,907411,water,rural
+96,female,13699,water,rural
+87,female,956948,water,rural
+79,male,319833,water,urban
+91,male,124524,water,urban
+56,female,750627,water,rural
+99,male,465976,water,suburban
+99,female,967271,water,urban
+36,female,795494,fruit juice,urban
+69,male,8536,water,suburban
+79,male,866066,water,urban
+15,male,737848,soda,urban
+89,male,703692,water,rural
+97,male,781466,water,rural
+50,female,920715,water,rural
+24,female,573062,fruit juice,suburban
+86,female,805433,water,suburban
+42,male,723794,water,rural
+20,male,656379,soda,suburban
+35,female,288040,fruit juice,urban
+42,male,915496,water,rural
+65,female,952971,water,suburban
+94,female,470659,water,suburban
+89,female,783311,water,rural
+13,male,429279,soda,urban
+99,male,923444,water,urban
+77,female,25122,water,urban
+96,male,52441,water,urban
+15,male,790777,soda,rural
+17,female,605864,soda,urban
+55,female,145735,water,urban
+16,female,835218,soda,rural
+77,female,240492,water,urban
+30,female,20305,fruit juice,suburban
+77,female,680942,water,urban
+100,male,12234,water,suburban
+80,female,681889,water,suburban
+97,female,572859,water,urban
+72,male,938524,water,suburban
+66,female,909062,water,suburban
+44,female,164384,fruit juice,urban
+65,male,46639,water,rural
+25,female,683463,fruit juice,rural
+73,female,915029,water,suburban
+36,female,997368,fruit juice,rural
+70,female,903292,water,urban
+44,male,553358,water,suburban
+60,female,742112,water,rural
+34,female,475123,fruit juice,rural
+41,female,600439,fruit juice,rural
+47,male,196491,soda,rural
+7,male,580168,soda,urban
+58,female,636532,water,rural
+28,male,188611,soda,suburban
+23,male,886012,soda,urban
+56,female,91225,water,rural
+24,male,956241,soda,urban
+76,female,636858,water,suburban
+95,female,569785,water,suburban
+87,male,887238,water,suburban
+90,male,756295,water,suburban
+33,male,498565,water,rural
+22,female,71167,fruit juice,suburban
+94,male,541511,water,urban
+90,female,430095,water,rural
+65,male,589094,water,rural
+23,female,355689,fruit juice,rural
+53,female,771609,water,urban
+64,male,201678,water,rural
+55,female,643713,water,rural
+32,male,685711,water,urban
+38,female,879328,fruit juice,urban
+78,female,712426,water,suburban
+81,female,703544,water,suburban
+9,female,71038,soda,suburban
+69,female,156843,water,urban
+93,female,803699,water,urban
+94,female,568952,water,urban
+26,male,557536,soda,urban
+93,female,742992,water,urban
+70,male,241980,water,urban
+74,female,488911,water,suburban
+32,male,122510,soda,urban
+73,male,87579,water,urban
+10,female,339941,soda,urban
+76,male,391673,water,rural
+32,female,450874,fruit juice,suburban
+6,female,230888,soda,urban
+48,female,200087,fruit juice,urban
+60,male,620963,water,urban
+40,male,541053,water,suburban
+86,female,135080,water,suburban
+46,female,251811,fruit juice,urban
+59,female,566806,water,suburban
+70,female,399132,water,suburban
+84,male,105033,water,rural
+94,male,488691,water,urban
+62,male,489448,water,rural
+32,female,628212,fruit juice,urban
+18,female,948008,fruit juice,suburban
+27,female,777414,fruit juice,rural
+52,female,901533,water,rural
+17,male,917497,soda,urban
+42,female,732872,fruit juice,rural
+16,male,697911,soda,rural
+77,female,266847,water,suburban
+19,male,593057,soda,suburban
+35,male,819387,water,rural
+41,male,227363,water,suburban
+56,male,157755,water,rural
+47,female,680989,fruit juice,rural
+72,male,811544,water,suburban
+35,male,906271,water,suburban
+55,male,271216,water,suburban
+89,male,370876,water,suburban
+96,male,266436,water,urban
+65,male,683000,water,rural
+52,male,343778,water,suburban
+63,female,713575,water,rural
+25,male,39073,soda,rural
+76,female,252953,water,urban
+13,male,542215,soda,urban
+82,male,300843,water,suburban
+45,female,328492,fruit juice,suburban
+46,male,241689,water,rural
+71,female,109948,water,rural
+75,female,873341,water,urban
+94,female,675586,water,rural
+55,male,591891,water,suburban
+98,male,137894,water,urban
+79,female,588212,water,rural
+91,female,104190,water,urban
+71,male,879971,water,rural
+86,female,260883,water,rural
+80,male,359882,water,urban
+45,female,292746,fruit juice,suburban
+5,male,71306,soda,suburban
+71,female,66763,water,suburban
+80,female,978422,water,urban
+98,female,725606,water,rural
+13,male,751890,soda,suburban
+12,male,651918,soda,suburban
+99,female,918844,water,rural
+95,male,651361,water,rural
+94,female,65515,water,suburban
+46,female,232944,fruit juice,suburban
+95,male,814288,water,rural
+49,female,103761,fruit juice,urban
+85,female,750854,water,urban
+64,female,203704,water,urban
+55,female,454262,water,urban
+57,female,293528,water,rural
+34,male,922005,water,urban
+62,female,496620,water,rural
+63,male,338156,water,urban
+56,female,508665,water,rural
+96,female,93532,water,rural
+97,male,311452,water,urban
+76,female,854576,water,urban
+52,female,517736,water,rural
+87,female,223862,water,suburban
+81,female,623438,water,urban
+81,male,5331,water,rural
+39,male,57630,soda,urban
+17,female,826942,soda,rural
+67,female,914568,water,rural
+99,female,389180,water,urban
+64,male,882953,water,urban
+96,female,467122,water,suburban
+78,male,106792,water,urban
+58,male,369793,water,suburban
+17,male,363907,soda,urban
+95,female,501433,water,suburban
+35,female,399656,fruit juice,rural
+59,male,518576,water,rural
+44,female,692638,fruit juice,urban
+14,female,664060,soda,urban
+76,female,659659,water,suburban
+62,female,627576,water,rural
+39,female,501102,fruit juice,rural
+18,male,389016,soda,suburban
+89,male,106556,water,suburban
+88,female,841080,water,urban
+85,female,471015,water,suburban
+70,male,441385,water,suburban
+15,female,139241,soda,urban
+91,female,513495,water,rural
+94,male,932519,water,urban
+10,female,401719,soda,urban
+27,female,691646,fruit juice,suburban
+75,male,285620,water,suburban
+86,female,211760,water,urban
+86,female,29648,water,urban
+87,male,423947,water,rural
+32,female,990080,fruit juice,rural
+6,male,14952,soda,rural
+68,male,476066,water,urban
+79,male,735613,water,suburban
+32,male,394880,water,suburban
+81,male,280848,water,suburban
+75,female,195855,water,urban
+36,female,984502,fruit juice,rural
+80,female,778643,water,urban
+42,female,111978,fruit juice,suburban
+60,female,544575,water,urban
+49,female,802076,fruit juice,rural
+21,female,314812,fruit juice,suburban
+81,female,958730,water,suburban
+91,male,526797,water,suburban
+5,female,270004,soda,urban
+25,male,486159,soda,rural
+51,male,536972,water,suburban
+49,male,68663,soda,suburban
+45,male,117828,soda,urban
+90,female,475012,water,rural
+23,female,3333,fruit juice,rural
+54,female,827166,water,suburban
+30,male,225703,water,urban
+91,female,435455,water,suburban
+11,female,862696,soda,suburban
+96,male,804481,water,urban
+40,male,554829,water,rural
+17,female,829394,soda,urban
+56,female,977350,water,rural
+85,female,568657,water,urban
+18,male,277105,soda,urban
+30,male,624361,water,urban
+48,male,135769,soda,urban
+18,female,181159,fruit juice,suburban
+37,female,934198,fruit juice,rural
+35,female,920993,fruit juice,suburban
+28,male,103583,soda,suburban
+58,male,710677,water,rural
+15,female,948805,soda,suburban
+8,male,465426,soda,suburban
+19,male,845353,soda,urban
+38,male,732694,water,rural
+75,male,857192,water,rural
+39,female,873424,fruit juice,rural
+13,male,190426,soda,rural
+15,female,679437,soda,rural
+49,female,602740,fruit juice,urban
+8,male,722224,soda,rural
+28,male,543423,soda,urban
+44,male,1215,soda,rural
+87,female,729516,water,rural
+11,female,499795,soda,suburban
+31,female,283358,fruit juice,suburban
+33,male,659271,water,urban
+39,female,317385,fruit juice,rural
+47,female,708761,fruit juice,urban
+87,female,455504,water,suburban
+95,female,826992,water,urban
+37,male,180693,soda,suburban
+44,male,952485,water,urban
+20,female,880418,fruit juice,urban
+99,female,113992,water,urban
+66,male,21680,water,urban
+89,male,676058,water,rural
+7,male,968128,soda,urban
+88,female,229450,water,rural
+96,female,910909,water,urban
+21,male,404021,soda,urban
+33,female,673365,fruit juice,urban
+81,male,644848,water,urban
+77,male,259336,water,suburban
+43,female,635273,fruit juice,suburban
+86,male,543585,water,rural
+99,female,854334,water,rural
+85,male,447610,water,suburban
+34,male,791361,water,suburban
+46,male,117318,soda,rural
+35,male,791621,water,rural
+46,female,469785,fruit juice,suburban
+16,male,116449,soda,urban
+35,female,866425,fruit juice,urban
+73,male,344991,water,suburban
+7,male,541949,soda,rural
+71,male,47627,water,rural
+9,female,644900,soda,suburban
+14,female,980508,soda,urban
+68,male,577729,water,urban
+35,female,201156,fruit juice,rural
+5,female,616444,soda,urban
+51,male,38554,water,rural
+19,female,374340,fruit juice,suburban
+52,female,453792,water,suburban
+91,female,796099,water,suburban
+39,female,458919,fruit juice,urban
+29,female,776915,fruit juice,urban
+92,male,899002,water,urban
+62,male,274759,water,rural
+51,female,744299,water,urban
+50,male,318213,water,urban
+60,male,726448,water,suburban
+28,male,910857,soda,rural
+51,male,621737,water,rural
+95,female,710830,water,urban
+33,female,822957,fruit juice,urban
+58,male,904665,water,rural
+70,female,577253,water,suburban
+67,female,657777,water,urban
+74,female,656769,water,rural
+28,male,744579,soda,suburban
+43,female,363595,fruit juice,rural
+94,female,904312,water,rural
+96,female,507477,water,rural
+34,male,319817,water,urban
+62,male,933817,water,suburban
+32,female,51370,fruit juice,rural
+75,female,367348,water,suburban
+93,male,130193,water,suburban
+71,male,69721,water,suburban
+31,female,921049,fruit juice,suburban
+99,male,902915,water,suburban
+87,female,254927,water,urban
+77,male,968416,water,rural
+7,male,650167,soda,rural
+37,male,126637,soda,rural
+17,male,957709,soda,urban
+96,female,730484,water,suburban
+11,female,938404,soda,urban
+46,female,887659,fruit juice,rural
+25,male,251831,soda,suburban
+83,male,747061,water,suburban
+64,male,46455,water,rural
+82,male,535622,water,urban
+49,female,503545,fruit juice,rural
+95,female,163867,water,suburban
+84,female,432757,water,rural
+6,female,449316,soda,suburban
+73,female,221398,water,suburban
+26,male,386905,soda,suburban
+70,female,949250,water,suburban
+99,male,512548,water,urban
+40,male,262267,water,suburban
+41,male,272519,water,rural
+81,female,826386,water,urban
+17,male,990392,soda,suburban
+40,male,523695,water,rural
+79,male,226245,water,suburban
+66,female,672097,water,suburban
+63,female,847107,water,suburban
+69,male,925308,water,suburban
+50,female,640424,water,suburban
+37,female,133380,fruit juice,suburban
+11,female,236642,soda,rural
+73,female,59601,water,rural
+63,female,102957,water,urban
+70,female,372427,water,suburban
+61,male,710964,water,urban
+53,male,255942,water,urban
+43,male,875310,water,suburban
+92,male,653814,water,rural
+22,female,995897,fruit juice,suburban
+25,male,862345,soda,rural
+76,male,101663,water,rural
+37,female,785238,fruit juice,rural
+15,female,64540,soda,suburban
+80,male,477995,water,suburban
+58,female,647991,water,urban
+49,female,805416,fruit juice,urban
+38,female,29807,fruit juice,suburban
+18,female,648285,fruit juice,rural
+79,male,487821,water,suburban
+10,female,50527,soda,rural
+91,female,280559,water,suburban
+37,male,862316,water,suburban
+13,female,846114,soda,suburban
+27,male,682619,soda,rural
+67,female,364133,water,suburban
+97,male,370702,water,rural
+43,male,423596,water,urban
+35,female,420759,fruit juice,urban
+15,female,293818,soda,urban
+10,male,967643,soda,rural
+12,male,814655,soda,suburban
+27,female,500750,fruit juice,suburban
+11,female,993690,soda,urban
+99,female,112514,water,suburban
+57,male,909935,water,rural
+99,male,971594,water,suburban
+30,male,804684,water,urban
+16,male,274325,soda,urban
+29,male,9338,soda,suburban
+24,male,220453,soda,urban
+18,male,206707,soda,suburban
+98,male,208427,water,suburban
+15,female,562879,soda,suburban
+48,male,695055,water,urban
+46,female,976707,fruit juice,rural
+97,male,872397,water,urban
+27,male,66117,soda,rural
+59,female,196476,water,urban
+7,male,140651,soda,suburban
+64,male,267601,water,suburban
+33,female,345230,fruit juice,suburban
+88,female,142113,water,urban
+60,female,920456,water,rural
+89,male,579509,water,urban
+87,female,824613,water,rural
+55,female,194802,water,urban
+62,female,560784,water,urban
+10,male,140500,soda,suburban
+73,male,262849,water,rural
+36,male,153314,soda,rural
+48,male,472887,water,urban
+99,female,765995,water,rural
+41,female,283582,fruit juice,suburban
+88,female,977329,water,urban
+16,male,736603,soda,suburban
+69,male,207172,water,urban
+64,male,282968,water,rural
+32,female,447365,fruit juice,urban
+40,male,288072,water,rural
+27,female,996852,fruit juice,suburban
+23,male,112004,soda,urban
+23,male,90321,soda,suburban
+13,female,28346,soda,rural
+7,female,511929,soda,suburban
+58,male,150585,water,suburban
+58,male,551425,water,rural
+22,female,960118,fruit juice,suburban
+47,female,712642,fruit juice,urban
+99,male,288135,water,urban
+57,female,494139,water,urban
+96,female,110527,water,suburban
+20,male,97040,soda,urban
+33,male,10000,soda,rural
+61,male,324692,water,rural
+75,male,935271,water,suburban
+86,female,394983,water,suburban
+59,male,329484,water,urban
+49,female,92824,fruit juice,rural
+8,male,413521,soda,urban
+41,female,553463,fruit juice,suburban
+100,male,503051,water,suburban
+91,female,72990,water,urban
+73,female,278732,water,urban
+45,male,136960,soda,suburban
+74,female,954185,water,rural
+13,male,232747,soda,urban
+79,female,944866,water,suburban
+56,female,907325,water,suburban
+40,female,921531,fruit juice,suburban
+72,female,892620,water,urban
+45,female,253624,fruit juice,rural
+16,male,874140,soda,urban
+58,male,531291,water,suburban
+65,female,642566,water,urban
+17,male,298176,soda,urban
+28,male,839722,soda,urban
+62,female,510060,water,rural
+46,male,558715,water,suburban
+58,male,184559,water,suburban
+15,male,571421,soda,urban
+59,male,634504,water,urban
+8,male,973331,soda,rural
+24,female,849859,fruit juice,rural
+78,male,510171,water,rural
+7,female,416272,soda,urban
+42,male,168531,soda,suburban
+25,female,319035,fruit juice,suburban
+23,male,98619,soda,suburban
+49,male,149430,soda,suburban
+66,male,396454,water,urban
+59,male,64610,water,urban
+84,male,135611,water,suburban
+76,male,564554,water,suburban
+71,female,183262,water,urban
+78,female,146455,water,rural
+96,male,344044,water,rural
+20,male,888982,soda,rural
+79,male,296502,water,suburban
+21,male,449597,soda,suburban
+83,female,791475,water,rural
+15,female,423576,soda,urban
+26,female,95963,fruit juice,rural
+26,male,156451,soda,rural
+59,female,975478,water,urban
+13,male,995334,soda,urban
+86,male,862882,water,suburban
+26,female,533897,fruit juice,urban
+46,female,120926,fruit juice,suburban
+82,female,347219,water,urban
+43,female,574708,fruit juice,suburban
+41,male,890049,water,rural
+94,female,227440,water,suburban
+36,male,96199,soda,urban
+10,male,193431,soda,urban
+8,female,255465,soda,suburban
+56,male,752296,water,rural
+61,male,878966,water,urban
+86,female,429351,water,rural
+14,male,163870,soda,rural
+83,male,981794,water,rural
+23,female,464712,fruit juice,urban
+66,female,435576,water,suburban
+70,male,907378,water,rural
+60,male,883040,water,urban
+75,male,923588,water,suburban
+51,female,785883,water,urban
+32,female,850506,fruit juice,rural
+18,male,659195,soda,rural
+80,female,715637,water,urban
+40,male,986271,water,urban
+45,female,443321,fruit juice,urban
+30,female,584362,fruit juice,urban
+17,male,751321,soda,urban
+75,male,153277,water,rural
+17,male,374478,soda,suburban
+70,female,285412,water,suburban
+23,female,549271,fruit juice,rural
+78,female,8887,water,rural
+6,male,548639,soda,rural
+89,male,83777,water,rural
+27,female,604894,fruit juice,urban
+86,female,137373,water,rural
+38,female,65896,fruit juice,rural
+26,female,813580,fruit juice,urban
+98,female,713891,water,suburban
+78,female,103035,water,suburban
+66,male,40580,water,rural
+21,male,436404,soda,rural
+69,male,640613,water,rural
+59,male,16230,water,urban
+19,female,350955,fruit juice,suburban
+89,male,953412,water,urban
+33,male,377927,water,suburban
+46,male,499445,water,suburban
+73,female,600176,water,urban
+68,female,932562,water,suburban
+97,male,694052,water,suburban
+23,male,417945,soda,urban
+13,female,293957,soda,suburban
+70,female,618817,water,rural
+18,female,856656,fruit juice,suburban
+24,female,567968,fruit juice,suburban
+40,female,363880,fruit juice,suburban
+11,female,687531,soda,rural
+5,female,443500,soda,suburban
+34,female,680074,fruit juice,urban
+54,female,910692,water,suburban
+68,male,268305,water,suburban
+26,male,795283,soda,suburban
+28,male,234277,soda,urban
+99,male,977894,water,suburban
+54,male,238839,water,urban
+38,female,573385,fruit juice,urban
+58,female,403748,water,rural
+9,male,971539,soda,rural
+74,male,358383,water,suburban
+8,female,311813,soda,rural
+93,female,830689,water,suburban
+71,female,814080,water,suburban
+66,male,635051,water,urban
+84,male,900575,water,urban
+75,male,371197,water,suburban
+5,female,576136,soda,rural
+66,male,401507,water,suburban
+10,male,196331,soda,suburban
+19,male,993513,soda,rural
+70,male,335296,water,suburban
+85,female,357681,water,urban
+5,female,1808,soda,urban
+28,female,798655,fruit juice,suburban
+31,male,538793,water,suburban
+60,male,133664,water,suburban
+9,male,150501,soda,rural
+26,male,267388,soda,suburban
+99,female,52856,water,urban
+59,female,520527,water,rural
+40,male,125384,soda,urban
+77,male,941536,water,rural
+10,male,28343,soda,suburban
+43,female,105362,fruit juice,suburban
+31,female,508442,fruit juice,suburban
+20,male,185038,soda,suburban
+31,female,570102,fruit juice,suburban
+72,male,302366,water,rural
+41,male,189860,soda,urban
+13,female,662748,soda,urban
+8,male,915968,soda,suburban
+5,female,503864,soda,urban
+94,female,122977,water,rural
+23,male,35706,soda,suburban
+70,male,429635,water,rural
+91,female,501849,water,suburban
+45,male,784727,water,urban
+18,female,867992,fruit juice,urban
+12,male,335594,soda,rural
+35,female,940250,fruit juice,urban
+45,female,498569,fruit juice,rural
+66,male,553307,water,rural
+32,male,218869,water,urban
+48,male,882549,water,rural
+13,female,664670,soda,urban
+21,female,246866,fruit juice,suburban
+69,female,255216,water,urban
+33,female,366326,fruit juice,suburban
+91,male,130789,water,suburban
+62,female,733369,water,urban
+73,male,891288,water,suburban
+77,male,497471,water,suburban
+47,male,889898,water,rural
+65,female,844521,water,urban
+43,female,434252,fruit juice,rural
+86,male,660107,water,urban
+9,male,277246,soda,rural
+53,male,614654,water,urban
+23,male,682593,soda,urban
+63,female,711665,water,urban
+92,male,308729,water,urban
+53,male,303639,water,urban
+82,male,32957,water,urban
+22,female,162312,fruit juice,urban
+93,female,661840,water,suburban
+81,female,13341,water,suburban
+77,female,114121,water,urban
+29,female,995534,fruit juice,suburban
+83,male,395999,water,rural
+36,female,534877,fruit juice,urban
+35,female,426005,fruit juice,suburban
+82,male,436238,water,rural
+80,male,952991,water,rural
+35,female,837496,fruit juice,urban
+95,male,685678,water,suburban
+61,female,315818,water,suburban
+20,female,29384,fruit juice,suburban
+94,female,970697,water,urban
+80,male,216212,water,rural
+63,male,632727,water,urban
+86,male,462403,water,suburban
+62,male,268817,water,rural
+87,male,566422,water,urban
+8,male,963897,soda,suburban
+78,male,819410,water,rural
+21,female,473615,fruit juice,urban
+51,female,49780,water,urban
+83,female,409591,water,suburban
+92,male,94008,water,rural
+83,male,808972,water,rural
+72,male,481482,water,rural
+95,female,712138,water,suburban
+22,female,522641,fruit juice,rural
+50,female,789902,water,rural
+20,female,17557,fruit juice,urban
+74,female,757152,water,urban
+19,female,449696,fruit juice,rural
+14,male,176329,soda,suburban
+74,male,487580,water,rural
+48,male,915266,water,suburban
+90,female,91275,water,rural
+49,male,272302,water,suburban
+58,female,944997,water,suburban
+15,male,332684,soda,urban
+32,male,449029,water,rural
+46,female,820310,fruit juice,suburban
+55,male,475170,water,suburban
+22,male,379207,soda,rural
+42,female,291186,fruit juice,suburban
+74,male,750695,water,rural
+22,female,126297,fruit juice,urban
+60,male,827661,water,urban
+32,female,749122,fruit juice,suburban
+43,male,596401,water,suburban
+42,male,527963,water,rural
+75,male,516206,water,rural
+15,female,183008,soda,rural
+21,male,47088,soda,urban
+66,male,25409,water,rural
+96,female,398958,water,suburban
+45,male,622179,water,urban
+77,female,354825,water,urban
+74,female,884348,water,rural
+78,female,639076,water,rural
+82,female,822039,water,suburban
+58,female,384798,water,rural
+57,male,97108,water,suburban
+65,female,56318,water,rural
+45,male,226043,water,suburban
+43,female,849271,fruit juice,suburban
+14,female,883050,soda,suburban
+86,female,198224,water,suburban
+36,male,798160,water,urban
+99,male,690142,water,urban
+37,female,392421,fruit juice,urban
+34,male,259958,water,rural
+29,female,203004,fruit juice,urban
+97,male,135426,water,suburban
+60,male,541994,water,urban
+76,male,849381,water,suburban
+61,male,540693,water,urban
+49,female,33234,fruit juice,rural
+45,male,721934,water,rural
+52,male,919609,water,rural
+46,female,299747,fruit juice,rural
+85,female,761164,water,rural
+8,female,457779,soda,suburban
+59,female,648405,water,rural
+52,female,993636,water,urban
+8,male,474856,soda,urban
+91,female,892656,water,suburban
+27,male,83737,soda,urban
+57,female,792976,water,rural
+29,female,449388,fruit juice,rural
+40,female,867642,fruit juice,rural
+17,male,934875,soda,urban
+80,male,240822,water,suburban
+87,male,842099,water,suburban
+44,male,404065,water,suburban
+51,male,736993,water,rural
+90,male,942676,water,rural
+36,male,524726,water,urban
+86,male,304667,water,suburban
+96,female,461182,water,urban
+60,female,453969,water,rural
+76,female,712479,water,suburban
+49,male,645470,water,suburban
+9,male,559001,soda,rural
+94,female,912160,water,urban
+16,male,751827,soda,rural
+38,female,498118,fruit juice,suburban
+70,female,372254,water,rural
+65,male,138867,water,rural
+29,male,462339,soda,urban
+54,female,522721,water,suburban
+80,female,567522,water,suburban
+45,male,730333,water,suburban
+59,female,2403,water,suburban
+31,male,64319,soda,suburban
+58,female,6093,water,urban
+53,male,880613,water,suburban
+96,female,969060,water,urban
+89,male,341492,water,urban
+94,male,753302,water,urban
+77,female,551021,water,rural
+43,female,405232,fruit juice,suburban
+88,female,60204,water,suburban
+50,male,993078,water,suburban
+51,female,17496,water,urban
+12,female,475816,soda,rural
+40,male,398506,water,urban
+45,male,278191,water,suburban
+77,female,37610,water,suburban
+13,female,69632,soda,suburban
+5,female,118041,soda,rural
+61,male,898417,water,urban
+56,male,393196,water,rural
+11,male,158243,soda,suburban
+75,female,820876,water,suburban
+26,male,371085,soda,rural
+75,female,561702,water,urban
+38,female,625435,fruit juice,suburban
+32,male,406834,water,urban
+97,female,224919,water,suburban
+28,female,211540,fruit juice,urban
+47,male,486381,water,rural
+54,male,348840,water,suburban
+62,female,789173,water,urban
+46,female,416455,fruit juice,suburban
+64,male,549543,water,rural
+18,male,187360,soda,urban
+86,male,573618,water,suburban
+79,female,803241,water,urban
+57,female,13330,water,suburban
