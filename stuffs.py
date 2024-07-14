@@ -46,7 +46,6 @@ class constants(object):
 
     }
 
-
 class texts(object):
     spyder_text = '''
 
