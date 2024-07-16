@@ -9,6 +9,7 @@ def sum_product(a,b):
     return np.sum(a * b)
 
 class Helpers(object):
+    
     def __init__(self,config={}) -> None:
         self.config = config
         self.stats = {"error_details": []}
@@ -49,6 +50,7 @@ class Helpers(object):
                     
             }
             return dict_config
+    
     def getDataFrameNames():
         """
         This function provides the different types of names 
@@ -56,6 +58,7 @@ class Helpers(object):
         """
         lst = ["dataframe", "df", "data-frame"]
         return lst
+    
     def sum_product(a,b):
         return np.sum(a * b)
 
